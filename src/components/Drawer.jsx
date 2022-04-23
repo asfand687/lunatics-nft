@@ -1,5 +1,6 @@
 import React from 'react'
 import Logo from '../assets/logo.svg'
+import { Link } from 'react-router-dom'
 
 const Drawer = ({ showDrawer, setShowDrawer }) => {
   return (
@@ -7,21 +8,21 @@ const Drawer = ({ showDrawer, setShowDrawer }) => {
       <div onClick={() => setShowDrawer(false)} className="flex flex-row-reverse font-sans  cursor-pointer">
         <span className='px-2 cursor-pointer font-sans'>X</span>
       </div>
-      <a href="#"><img className="w-10 mx-auto" src={Logo} alt="Logo" /></a>
+      <Link to="/"><img className="w-10 mx-auto" src={Logo} alt="Logo" /></Link>
 
       <div className="flex flex-col mt-10 space-y-6">
-        <a href="#">
+        <Link to="/about">
           About
-        </a>
-        <a href="#">
+        </Link>
+        <Link to="/roadmap">
           Roadmap
-        </a>
-        <a href="#">
+        </Link>
+        <Link to="/team">
           Meet The Team
-        </a>
-        <a href="#">
+        </Link>
+        <Link to="/faq">
           FAQ
-        </a>
+        </Link>
       </div>
     </div>
   )

@@ -5,7 +5,7 @@ const Vault = () => {
   return (
     <section>
       <div className="bg-[#0300AD]">
-        <h2 className='w-full max-w-[1300px] mx-auto text-4xl font-bold text-white py-4'>Into The Vault</h2>
+        <h2 className='w-full max-w-[1300px] mx-auto text-4xl font-bold text-white p-4'>Into The Vault</h2>
       </div>
       <section className="mt-14 mb-10 w-full max-w-[1300px] mx-auto flex flex-col px-4 md:flex-row md:space-x-6">
         <article className='flex-1 space-y-6 md:space-y-0'>

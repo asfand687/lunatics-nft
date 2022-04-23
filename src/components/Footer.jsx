@@ -20,40 +20,40 @@ const Footer = () => {
           <div className="md:text-right">
             <h2 className="md:hidden border-b border-white pb-2 w-32 pt-4 mb-4">Legal</h2>
             <article>
-              <a href="#">Terms Of Service</a>
+              <p>Terms Of Service</p>
             </article>
             <article>
-              <a href="#">Legal Overview</a>
+              <p>Legal Overview</p>
             </article>
             <article>
-              <a href="#">Privacy Policy</a>
+              <p>Privacy Policy</p>
             </article>
           </div>
           <div className="md:space-x-0 text-left">
             <h2 className="md:hidden border-b border-white pb-2 w-32 pt-4 mb-4">Follow Us</h2>
             <article className="inline-block md:block">
-              <a href="#">
+              <div>
                 <span className="hidden md:inline">
                   Instagram
                 </span>
                 <img className="md:hidden" src={Instagram} alt="Insta Logo" />
-              </a>
+              </div>
             </article>
             <article className="inline-block md:block">
-              <a href="#">
+              <div>
                 <span className="hidden md:inline">
                   Twitter
                 </span>
                 <img className="md:hidden mx-4" src={Twitter} alt="Twitter Logo" />
-              </a>
+              </div>
             </article>
             <article className="inline-block md:block">
-              <a href="#">
+              <div>
                 <span className="hidden md:inline">
                   Email
                 </span>
                 <img className="md:hidden" src={Youtube} alt="Youtube Logo" />
-              </a>
+              </div>
             </article>
           </div>
         </article>
