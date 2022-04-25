@@ -1,8 +1,16 @@
 import React from 'react'
+import SectionTitle from '../components/SectionTitle'
+import AboutHero from '../components/AboutHero'
+import CompanySection from '../components/CompanySection'
 
 const About = () => {
   return (
-    <div>About</div>
+    <section>
+      <SectionTitle text={"About"} />
+      <AboutHero />
+      <CompanySection />
+    </section>
+
   )
 }
 
