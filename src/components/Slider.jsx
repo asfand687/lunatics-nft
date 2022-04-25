@@ -3,10 +3,10 @@ import Carousel from "react-multi-carousel"
 import "react-multi-carousel/lib/styles.css"
 import Shadow from '../assets/shadow.png'
 import Marker from './Marker'
-import SliderPic1 from '../assets/slider-001.png'
-import SliderPic2 from '../assets/slider-002.png'
-import SliderPic3 from '../assets/slider-003.png'
-import SliderPic4 from '../assets/slider-004.png'
+import SliderPic1 from '../assets/slider-001-min.png'
+import SliderPic2 from '../assets/slider-002-min.png'
+import SliderPic3 from '../assets/slider-003-min.png'
+import SliderPic4 from '../assets/slider-004-min.png'
 
 const responsive = {
   desktop: {
