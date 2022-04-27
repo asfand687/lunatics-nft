@@ -11,7 +11,7 @@ import SliderPic4 from '../assets/slider-004-min.png'
 const responsive = {
   desktop: {
     breakpoint: { max: 3000, min: 1024 },
-    items: 1,
+    items: 2,
   },
   tablet: {
     breakpoint: { max: 1024, min: 464 },
@@ -56,40 +56,23 @@ const sliderData = [
 
 const Slider = () => {
   return (
-    <Carousel responsive={responsive} autoPlay={false} shouldResetAutoplay={false} centerMode>
-      {
-        sliderData.map(item => (
-          <article key={item.id} className="bg-[#282828]" >
-            <div className="flex flex-col lg:flex-row ipad:items-center justify-center items-center">
-              <div className=''>
-                <div className="w-full lg:flex-1 p-8 relative py-24 justify-center items-center">
-                  <img className="hidden lg:block absolute z-30 top-0 left-0" src={Shadow} alt="shadow" />
-                  <img className="w-full ipad:mx-0 lg:mx-auto lg:max-w-[500px]" src={item.img} alt={item.title} />
-                </div>
-                <div className="flex-1 px-6 lg:h-full text-white w-full">
-                  <div className="lg:h-[456px] flex lg:block pb-20">
-                    <div className="lg:block">
-                      <Marker classes="hidden lg:block" number={item.markerText} />
-                      <h3 className="text-4xl lg:py-4 font-bold order-1">{item.title}</h3>
-                      <p className="lg:hidden text-justify pt-6 w-full lg:max-w-[400px]">
-                        {item.description}
-                      </p>
-                    </div>
-                    <div>
-                      <Marker classes="lg:hidden" number={item.markerText} />
-                      <p className="hidden lg:block text-justify pt-2 w-full lg:max-w-[400px]">
-                        {item.description}
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </article>
-        ))
-      }
+    <div className="bg-[#282828] px-4 py-16">
 
-    </Carousel >
+      <Carousel responsive={responsive} autoPlay={false} shouldResetAutoplay={false} centerMode>
+        {
+          sliderData.map((item, idx) => (
+            <article className="flex space-x-4" key={item.id}  >
+              <img className="w-60" src={item.img} />
+              <div>
+                <Marker number={item.id} classes="mt-2" small />
+                <h2 className="text-base">{item.title}</h2>
+                <p className="text-[12px] max-w-[220px] leading-4">{item.description}</p>
+              </div>
+            </article>
+          ))
+        }
+      </Carousel >
+    </div>
   )
 }
 

@@ -28,9 +28,9 @@ const Container = styled.div`
 `
 
 
-const Marker = ({ number, classes }) => {
+const Marker = ({ number, classes, small }) => {
   return (
-    <Container className={`w-[50px] leading-[3rem] lg:leading-[4.5rem] h-[50px] lg:w-[70px] text-justify text-lg lg:text-[1.5rem] lg:h-[70px] ${classes}`}>{number}</Container>
+    <Container className={`w-[50px] leading-[3rem] ${!small && "lg:leading-[4.5rem]"} h-[50px] lg:w-[70px] text-justify text-lg ${small ? "lg:w-[50px] lg:h-[50px]" : "lg:w-[70px] lg:h-[70px]"} ${classes}`}>{number}</Container>
   )
 }
 

@@ -8,7 +8,7 @@ const Footer = () => {
   return (
     <footer className="bg-[#0300AD] text-white py-10 px-4">
       <div className="w-full max-w-[1300px] mx-auto flex flex-col md:flex-row md:justify-between">
-        <article className="hidden md:block flex-1">
+        <article className="hidden md:flex flex-1 flex-col justify-between">
           <h2 className="font-bold font-sans text-3xl">Lunatics</h2>
           <p className="text-lg font-light">Lorem ipsum dolor, sit amet consectetur adipisicing elit. dolores dolorem et aperiam? Bconsectetur adipisci recusandae repellat?</p>
         </article>

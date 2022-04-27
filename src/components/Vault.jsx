@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import Cog from '../assets/cog.svg'
-import Slider from './Slider'
+import Slider from './Slick'
 import { AnimatePresence, motion } from 'framer-motion'
 import SectionTitle from './SectionTitle'
 
