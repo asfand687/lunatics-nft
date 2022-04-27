@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import '../App.css'
-import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
 import SliderPic1 from '../assets/slider-001-min.png'
 import SliderPic2 from '../assets/slider-002-min.png'
 import SliderPic3 from '../assets/slider-003-min.png'
