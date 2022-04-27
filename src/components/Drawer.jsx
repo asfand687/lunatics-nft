@@ -8,19 +8,19 @@ const Drawer = ({ showDrawer, setShowDrawer }) => {
       <div onClick={() => setShowDrawer(false)} className="flex flex-row-reverse font-sans  cursor-pointer">
         <span className='px-2 cursor-pointer font-sans'>X</span>
       </div>
-      <Link to="/"><img className="w-10 mx-auto" src={Logo} alt="Logo" /></Link>
+      <Link onClick={() => setShowDrawer(!showDrawer)} to="/"><img className="w-10 mx-auto" src={Logo} alt="Logo" /></Link>
 
       <div className="flex flex-col mt-10 space-y-6">
-        <Link to="/about">
+        <Link onClick={() => setShowDrawer(!showDrawer)} to="/about">
           About
         </Link>
-        <Link to="/roadmap">
+        <Link onClick={() => setShowDrawer(!showDrawer)} to="/roadmap">
           Roadmap
         </Link>
-        <Link to="/team">
+        <Link onClick={() => setShowDrawer(!showDrawer)} to="/team">
           Meet The Team
         </Link>
-        <Link to="/faq">
+        <Link onClick={() => setShowDrawer(!showDrawer)} to="/faq">
           FAQ
         </Link>
       </div>

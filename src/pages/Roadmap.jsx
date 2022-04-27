@@ -1,8 +1,13 @@
 import React from 'react'
+import Phases from '../components/Phases'
+import SectionTitle from '../components/SectionTitle'
 
 const Roadmap = () => {
   return (
-    <div>Roadmap</div>
+    <section>
+      <SectionTitle text={"Roadmap"} />
+      <Phases />
+    </section>
   )
 }
 
