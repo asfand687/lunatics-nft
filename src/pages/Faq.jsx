@@ -1,6 +1,3 @@
-import React, { useState } from 'react'
-import Marker from '../components/Marker'
-import Chevron from '../assets/chevron-down.svg'
 import Accordion from '../components/Accordion'
 
 const faqData = [
