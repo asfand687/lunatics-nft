@@ -9,7 +9,7 @@
   transition: color 300ms;
 }
 
-.arrow img:hover {
+.arrow svg:hover {
   color: #68edff;
 }
 
