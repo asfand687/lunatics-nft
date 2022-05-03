@@ -52,7 +52,7 @@ const faqData = [
 const Faq = () => {
 
   return (
-    <div className="w-full pt-16 pb-32 max-w-[1300px] px-4 lg:px-8 mx-auto">
+    <div className="w-full pt-16 pb-32 lg:max-w-[1300px] 2xl:max-w-full 2xl:mx-[3%] px-4 lg:px-8 mx-auto">
       {
         faqData.map(faq => (
           <Accordion key={faq.id} faq={faq} />

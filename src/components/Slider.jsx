@@ -56,8 +56,7 @@ const sliderData = [
 
 const Slider = () => {
   return (
-    <div className="bg-[#282828] px-4 py-16">
-
+    <div className="bg-[#282828] w-full lg:max-w-[1300px] 2xl:max-w-full 2xl:mx-[3%] px-4 py-16">
       <Carousel responsive={responsive} autoPlay={false} shouldResetAutoplay={false} centerMode>
         {
           sliderData.map((item, idx) => (

@@ -2,7 +2,7 @@ import React from 'react'
 
 const Phases = () => {
   return (
-    <section className="w-full flex flex-col space-y-6 lg:space-y-0 lg:flex-row lg:space-x-6 pt-16 pb-32 max-w-[1300px] px-4 lg:px-8 mx-auto">
+    <section className="w-full flex flex-col space-y-6 lg:space-y-0 lg:flex-row lg:space-x-6 pt-16 pb-32 lg:max-w-[1300px] 2xl:max-w-full 2xl:mx-[3%] px-4 lg:px-8 mx-auto">
       <article className="flex-1">
         <h2 className="text-4xl font-semibold pb-6 hidden lg:block">Phase 1</h2>
         <div className="bg-gray-300 rounded-lg p-4 space-y-6">

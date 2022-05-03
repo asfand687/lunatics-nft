@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom'
 const Navbar = () => {
   const [showDrawer, setShowDrawer] = useState(false)
   return (
-    <nav className="w-full max-w-[1300px] px-4 mx-auto flex justify-between items-center mb-2">
+    <nav className="w-full lg:max-w-[1300px] 2xl:max-w-full 2xl:mx-[3%] px-4 mx-auto flex justify-between items-center mb-2">
       <div className="md:hidden flex-1"></div>
       <div className="flex-1 flex justify-between items-center md:block">
         <Link to="/"><img className="w-10" src={Logo} alt="logo" /></Link>
