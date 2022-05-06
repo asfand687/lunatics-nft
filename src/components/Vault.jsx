@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import Cog from '../assets/cog.svg'
+import Cog from '../assets/chrome_bank_door 1.svg'
 import Slider from './Slick'
 import { AnimatePresence, motion } from 'framer-motion'
 import SectionTitle from './SectionTitle'
