@@ -3,22 +3,23 @@ import Logo from '../assets/logo-white.svg'
 import Youtube from '../assets/youtube.svg'
 import Instagram from '../assets/insta.svg'
 import Twitter from '../assets/twitter.svg'
+import Lunatics from '../assets/lunatics-sticker.svg'
 
 const Footer = () => {
   return (
     <footer className="bg-[#0300AD] w-screen text-white py-10 px-4">
       <div className="w-full lg:max-w-[1300px] 2xl:max-w-full 2xl:px-[3%] mx-auto flex flex-col md:flex-row md:justify-between">
-        <article className="hidden md:flex flex-1 flex-col justify-between">
-          <h2 className="font-bold font-sans text-3xl">Lunatics</h2>
-          <p className="text-lg font-light">Lorem ipsum dolor, sit amet consectetur adipisicing elit. dolores dolorem et aperiam? Bconsectetur adipisci recusandae repellat?</p>
+        <article className="hidden md:flex flex-1 flex-col px-4 md:max-w-[380px] text-base">
+          <img className="w-[189px]" src={Lunatics} alt="Lunatics" />
+          <p className="text-base font-light pt-6">Lorem ipsum dolor, sit amet consectetur adipisicing elit. dolores dolorem et aperiam? Bconsectetur adipisci recusandae repellat?</p>
         </article>
 
-        <article className="flex-1 text-center">
+        <article className="w-full md:max-w-[560px] text-center">
           <img className="md:mx-auto" src={Logo} alt="logo white" />
-          <p className="tracking-wide hidden md:block">Lorem ipsum dolor, sit amet consectetur adipisicing elit. dolores dolorem et aperiam? Bconsectetur adipisci recusandae repellat?</p>
+          <p className="tracking-wide font-light text-sm hidden md:block pt-4">Lunatics is a registered trademark of Lunatics Inc. All Rights Reserved. Lunatics All logos are registered trademarks of their respective owners. All contents of this document, unless otherwise credited, are copyright © 2022 Lunatics Inc.</p>
         </article>
 
-        <article className="flex-1 md:flex justify-end md:space-x-6 items-center">
+        <article className="flex-1 md:flex md:max-w-[250px] justify-end md:space-x-6 items-center">
           <div className="md:text-right">
             <h2 className="md:hidden border-b border-white pb-2 w-32 pt-4 mb-4">Legal</h2>
             <article>
