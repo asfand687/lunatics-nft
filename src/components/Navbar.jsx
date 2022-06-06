@@ -15,7 +15,7 @@ const Navbar = () => {
         <div className="md:hidden"><img onClick={() => setShowDrawer(!showDrawer)} className="cursor-pointer" src={Hamburger} alt="Hamburger icon" /></div>
       </div>
 
-      <div className="hidden md:flex space-x-6">
+      <div className="hidden md:flex items-center font-medium text-[20px] space-x-6">
         <Link to="/about">
           About
         </Link>
@@ -31,6 +31,8 @@ const Navbar = () => {
         <Link to="/faq">
           FAQ
         </Link>
+
+        <Link className="w-36 h-12 inline-flex justify-center items-center bg-[#0300AD] text-white rounded-full" to="#">Mint</Link>
       </div>
       <Drawer showDrawer={showDrawer} setShowDrawer={setShowDrawer} />
     </nav>

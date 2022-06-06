@@ -6,7 +6,6 @@ const Container = styled.div`
   border-radius: 50%;
   color: #fff;
   z-index: 2;
-  background: #3656E6;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -18,7 +17,6 @@ const Container = styled.div`
     content: "";
     width: 15px;
     height: 40px;
-    background: #3656E6;
     border-radius: 80% 80% 80% 80% / 50% 50% 20% 20%;
     position: absolute;
     bottom: -25px;
@@ -30,7 +28,7 @@ const Container = styled.div`
 
 const Marker = ({ number, classes, small }) => {
   return (
-    <Container className={`w-[50px] leading-[3rem] ${!small && "lg:leading-[4.5rem]"} h-[50px] lg:w-[70px] text-justify text-lg ${small ? "lg:w-[50px] lg:h-[50px]" : "lg:w-[70px] lg:h-[70px]"} ${classes}`}>{number}</Container>
+    <Container className={`w-[50px] leading-[3rem] ${!small && "lg:leading-[4.5rem]"} h-[50px] lg:w-[70px] text-justify text-lg  ${small ? "lg:w-[50px] lg:h-[50px]" : "lg:w-[70px] lg:h-[70px]"} ${classes}`}>{number}</Container>
   )
 }
 
