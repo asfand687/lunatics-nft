@@ -63,7 +63,7 @@ const Phases = () => {
         </div>
       </article>
       <article className="flex-1">
-        <h2 className="text-[2.5rem] font-notmal pb-6 hidden lg:block">Phase 3</h2>
+        <h2 className="text-[64px] font-normal hidden lg:block">Phase 3</h2>
         <ProgressPending className="hidden lg:block" />
         <div className="bg-[#EFEFEF] rounded-lg px-4 py-8 space-y-10 mt-6">
           <article>
