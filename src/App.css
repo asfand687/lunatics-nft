@@ -22,3 +22,13 @@
   left: 0%;
   top: 50%;
 }
+
+.video video {
+  object-fit: fill;
+}
+
+@media screen and (max-width: 400px) {
+  .video video {
+    object-fit: cover;
+  }
+}

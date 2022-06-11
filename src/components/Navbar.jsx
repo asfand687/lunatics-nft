@@ -32,7 +32,9 @@ const Navbar = () => {
           FAQ
         </Link>
 
-        <Link className="w-36 h-12 inline-flex justify-center items-center bg-[#0300AD] text-white rounded-full" to="#">Mint</Link>
+        <Link className="w-36 h-9 inline-flex text-sm justify-center items-center bg-[#0300AD] text-white rounded-full" to="#">Mint</Link>
+
+        <Link className="w-36 h-9 inline-flex text-sm justify-center items-center bg-[#0300AD] text-white rounded-full" to="#">Connect Wallet</Link>
       </div>
       <Drawer showDrawer={showDrawer} setShowDrawer={setShowDrawer} />
     </nav>
