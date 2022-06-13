@@ -21,7 +21,7 @@ const Hero = () => {
         muted={mute}
         loop={true}
         width="100%"
-        height="650px"
+        height="600px"
       />
     </section>
 
