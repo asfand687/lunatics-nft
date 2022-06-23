@@ -3,9 +3,11 @@ import { ReactComponent as Hofa } from '../assets/hofa.svg'
 
 const Affiliates = () => {
   return (
-    <section className="w-full max-w-[1300px] mx-auto my-6 flex flex-col items-center">
-      <h2 className="text-4xl font-light pb-12">Our Affiliates</h2>
-      <Hofa />
+    <section className="affiliates relative">
+      <div className="w-full  flex justify-between max-w-[1300px] mx-auto py-12">
+        <h2 className="text-4xl font-light">Our<br /> Affiliates</h2>
+        <Hofa />
+      </div>
     </section>
   )
 }

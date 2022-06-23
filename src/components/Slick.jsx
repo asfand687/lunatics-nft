@@ -145,52 +145,46 @@ const Slick = () => {
     infinite: true,
     lazyLoad: true,
     speed: 300,
-    slidesToShow: 3,
+    slidesToShow: 1,
     centerMode: true,
-    centerPadding: 10,
-    responsive: [
-      {
-        breakpoint: 1200,
-        settings: {
-          slidesToShow: 3,
-        }
-      },
-      {
-        breakpoint: 1050,
-        settings: {
-          slidesToShow: 2,
-        }
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-        }
-      }
-    ],
+    centerPadding: '50px',
     nextArrow: <NextArrow className="text-black" />,
     prevArrow: <PrevArrow className="text-black" />,
     beforeChange: (current, next) => setImageIndex(next),
   };
 
   return (
-    <div className="bg-black">
-      <div className="px-6 lg:block">
+    <motion.section
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ ease: 'circIn' }}
+      className="min-h-[600px] bg-black">
+      <div className="lg:block">
         <Slider {...settings}>
           {sliderData.map((slider, idx) => (
             <div key={slider.id} className={`px-4 ${idx === imageIndex ? "" : "opacity-30"}`} >
               <div className="flex flex-col items-center lg:flex-row space-x-6 py-14">
-                <article className={` relative`}>
+                <article className={` relative px-16`}>
                   {idx === imageIndex && (
-                    <img className={`absolute z-50  left-1/2 transform -translate-x-1/2 hidden ${idx === imageIndex ? "animate-pulse -top-14 scale-125 block" : ""}`} src={Shadow} alt="shadow" />
+                    <img
+                      className={`absolute z-50  left-1/2 transform -translate-x-1/2 hidden ${idx === imageIndex ? "animate-pulse -top-14 scale-125 block" : ""}`}
+                      src={Shadow} alt="shadow" />
                   )}
-                  <motion.img animate={{ scale: idx === imageIndex ? 1 : 0.9 }} transition={{ delay: 0.2, ease: 'easeInOut' }} className="w-[250px] h-[330px] relative z-10" src={slider.img} alt="nft" />
+                  <motion.img
+                    animate={{ scale: idx === imageIndex ? 1 : 0.9 }}
+                    transition={{ delay: 0.2, ease: 'easeInOut' }}
+                    className="w-full max-w-[500px] relative z-10"
+                    src={slider.img}
+                    alt="nft" />
                 </article>
                 <article className="flex-1 flex flex-col items-start">
                   <img className="w-20 h-20 " src={slider.marker} alt={slider.title} />
-                  <motion.div initial={{ opacity: 0.4 }} animate={{ opacity: idx === imageIndex ? 1 : 0.4 }} transition={{ delay: 0.5, ease: 'circIn' }}>
-                    <h2 className="text-white pt-4">{slider.title}</h2>
-                    <p className="text-white text-justify text-[12px] max-w-[300px]">{slider.description}</p>
+                  <motion.div
+                    initial={{ opacity: 0.4 }}
+                    animate={{ opacity: idx === imageIndex ? 1 : 0.4 }}
+                    transition={{ delay: 0.5, ease: 'circIn' }}>
+                    <h2 className="text-white py-6 text-5xl">{slider.title}</h2>
+                    <p className="text-white text-2xl max-w-lg">{slider.description}</p>
                   </motion.div>
                 </article>
               </div>
@@ -198,7 +192,7 @@ const Slick = () => {
           ))}
         </Slider>
       </div>
-    </div>
+    </motion.section>
   )
 }
 

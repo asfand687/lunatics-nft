@@ -1,3 +1,24 @@
+@font-face {
+  font-family: 'DecimaMonoPro';
+  src: local('DecimaMonoPro'), url("./assets/DecimaMonoPro.ttf") format('truetype');
+}
+
+body {
+  font-family: 'DecimaMonoPro';
+}
+
+.affiliates::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 130px;
+  border-radius: 0px 5px 5px 0px;
+  background: blue;
+}
+
 .arrow {
   background-color: #fff;
   position: absolute;
