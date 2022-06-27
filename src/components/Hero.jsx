@@ -6,7 +6,7 @@ const Hero = () => {
   const [mute, setMute] = useState(true)
   const [showMute, setShowMute] = useState(false)
   return (
-    <section onMouseEnter={() => setShowMute(true)} onMouseLeave={() => setShowMute(false)} className="relative w-full player-wrapper">
+    <section onMouseEnter={() => setShowMute(true)} onMouseLeave={() => setShowMute(false)} className="bg-black relative w-full player-wrapper">
       <div onClick={() => setMute(!mute)} className={`absolute z-20 cursor-pointer right-8 bottom-6 transition-opacity ease-in-out duration-300 text-white ${showMute ? "opacity-100" : "opacity-0"}`}>{mute ?
         (<div className="rounded-md bg-white p-2">
           <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" viewBox="0 0 20 20" fill="#000000">
@@ -28,7 +28,7 @@ const Hero = () => {
         muted={mute}
         loop={true}
         width="100%"
-        height="700px"
+        height="100%"
       />
     </section>
 

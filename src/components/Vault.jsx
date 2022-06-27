@@ -18,13 +18,13 @@ const Vault = () => {
   return (
     <>
       <SectionTitle text={"Into The Vault"} />
-      <section className="h-[600px]">
+      <section className="bg-black">
         <AnimatePresence exitBeforeEnter>
           {
             !showVault &&
             <>
-              <motion.section exit={{ opacity: 0, transition: { duration: 2, ease: 'easeIn' } }} className="z-0 h-full">
-                <section className={`h-full w-full  transform transition-all ease-out z-10 ${showVault ? 'translate-y-full hidden' : 'translate-y-0'}`}>
+              <motion.section exit={{ opacity: 0, transition: { duration: 0.5, ease: 'circInOut' } }} className="z-0 h-full">
+                <section className={`h-full w-full  transform transition-all ease-out z-10`}>
                   <article className={`absolute md:pl-20 z-10 bg-black bg-opacity-50 w-full h-full flex items-center space-y-6 md:space-y-0 transition-opacity duration-1000 ease-in-out ${hideText && 'opacity-0'}`}>
                     <div className="max-w-xl text-white">
                       <h2 className="text-4xl md:text-5xl font-medium">Enter Your Email To Gain Access To The Vault</h2>
@@ -41,7 +41,7 @@ const Vault = () => {
                     playing={playVideo}
                     loop={false}
                     width="100%"
-                    height="600px"
+                    height="100%"
                     onEnded={() => setShowVault(true)}
                   />
                 </section>
@@ -51,14 +51,7 @@ const Vault = () => {
           {
             showVault &&
             <motion.section
-              className={` h-[600px] relative z-10 transition-all ease-in-out transform ${showVault ? 'translate-y-0' : 'translate-y-full'}`}
-              initial={{ y: 1000 }}
-              animate={{ y: 0 }}
-              transition={{
-                type: "spring",
-                bounce: 30,
-                duration: 1
-              }}
+              className={`relative z-10`}
             >
               <Slider />
             </motion.section>

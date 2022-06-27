@@ -155,24 +155,24 @@ const Slick = () => {
 
   return (
     <motion.section
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ ease: 'circIn' }}
-      className="min-h-[600px] bg-black">
-      <div className="lg:block">
+      initial={{ translateY: 1000, opacity: 0 }}
+      animate={{ translateY: 0, opacity: 1 }}
+      transition={{ ease: 'circIn', duration: 1 }}
+      className=" bg-[#282828]">
+      <div className="lg:block lg:min-h-[850px] flex items-center">
         <Slider {...settings}>
           {sliderData.map((slider, idx) => (
-            <div key={slider.id} className={`px-4 ${idx === imageIndex ? "" : "opacity-30"}`} >
+            <div key={slider.id} className={`px-4 lg:pt-[44px] ${idx === imageIndex ? "" : "opacity-30"}`} >
               <div className="flex flex-col items-center lg:flex-row space-x-6 py-14">
                 <article className={` relative px-16`}>
                   {idx === imageIndex && (
                     <img
-                      className={`absolute z-50  left-1/2 transform -translate-x-1/2 hidden ${idx === imageIndex ? "animate-pulse -top-14 scale-125 block" : ""}`}
+                      className={`absolute z-50  left-1/2 top-0  transform -translate-x-1/2 hidden ${idx === imageIndex ? "animate-pulse  scale-125 block" : ""}`}
                       src={Shadow} alt="shadow" />
                   )}
                   <motion.img
                     animate={{ scale: idx === imageIndex ? 1 : 0.9 }}
-                    transition={{ delay: 0.2, ease: 'easeInOut' }}
+                    transition={{ delay: 0.7, ease: 'easeInOut' }}
                     className="w-full max-w-[500px] relative z-10"
                     src={slider.img}
                     alt="nft" />
