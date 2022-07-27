@@ -14,7 +14,7 @@ const Footer = () => {
           <p className="text-base font-light pt-6">Lorem ipsum dolor, sit amet consectetur adipisicing elit. dolores dolorem et aperiam? Bconsectetur adipisci recusandae repellat?</p>
         </article>
 
-        <article className="w-full md:max-w-[560px] 2xl:max-w-[750px] text-center">
+        <article className="w-full flex lg:space-x-4 md:max-w-[560px] 2xl:max-w-[750px] text-left">
           <img className="md:mx-auto" src={Logo} alt="logo white" />
           <p className="tracking-wide font-light text-sm hidden md:block pt-4">Lunatics is a registered trademark of Lunatics Inc. All Rights Reserved. Lunatics All logos are registered trademarks of their respective owners. All contents of this document, unless otherwise credited, are copyright © 2022 Lunatics Inc.</p>
         </article>

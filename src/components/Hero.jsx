@@ -12,13 +12,13 @@ const Hero = () => {
       <section
         ref={ref}
         className="h-[70vh] md:h-screen text-white hero-bg relative w-full">
-        <img className={`hidden md:block relative pt-20 z-10 transition-opacity ease-in-out duration-300 ${inView ? 'opacity-100' : 'opacity-0'}`} src={Clouds} alt="clouds" />
+        <img className={`hidden md:block relative top-52 h-[1000px] w-full z-10 transition-opacity ease-in-out duration-300 ${inView ? 'opacity-100' : 'opacity-0'}`} src={Clouds} alt="clouds" />
       </section>
 
       <section
         ref={ref2}
         className="h-[70vh] md:h-screen text-white hero-bg second relative w-full">
-        <img className={`hidden md:block relative pt-20 z-10 transition-opacity ease-in-out duration-300 ${inView2 ? 'opacity-100' : 'opacity-0'}`} src={Clouds} alt="clouds" />
+        <img className={`hidden md:block relative top-52 h-[1000px] w-full z-10 transition-opacity ease-in-out duration-300 ${inView2 ? 'opacity-100' : 'opacity-0'}`} src={Clouds} alt="clouds" />
       </section>
 
       <section className="h-[70vh] md:h-screen text-white hero-bg third relative w-full">
