@@ -48,6 +48,18 @@ body {
   object-fit: fill;
 }
 
+.hero-bg {
+  background: url('./assets/hero-bg.jpg') no-repeat center center/cover;
+}
+
+.hero-bg.second {
+  background: url('./assets/hero-02.png') no-repeat center center/cover;
+}
+
+.hero-bg.third {
+  background: url('./assets/hero-03.png') no-repeat center center/cover;
+}
+
 @media screen and (max-width: 400px) {
   .video video {
     object-fit: cover;

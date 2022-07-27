@@ -1,37 +1,29 @@
-import React, { useState } from 'react'
-import ReactPlayer from 'react-player'
-import Video from '../assets/hero.mp4'
+import React from 'react'
+import Clouds from '../assets/clouds-01.png'
+import { useInView } from 'react-intersection-observer'
+
 
 const Hero = () => {
-  const [mute, setMute] = useState(true)
-  const [showMute, setShowMute] = useState(false)
-  return (
-    <section onMouseEnter={() => setShowMute(true)} onMouseLeave={() => setShowMute(false)} className="bg-black relative w-full player-wrapper">
-      <div onClick={() => setMute(!mute)} className={`absolute z-20 cursor-pointer right-8 bottom-6 transition-opacity ease-in-out duration-300 text-white ${showMute ? "opacity-100" : "opacity-0"}`}>{mute ?
-        (<div className="rounded-md bg-white p-2">
-          <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" viewBox="0 0 20 20" fill="#000000">
-            <path fill-rule="evenodd" d="M9.383 3.076A1 1 0 0110 4v12a1 1 0 01-1.707.707L4.586 13H2a1 1 0 01-1-1V8a1 1 0 011-1h2.586l3.707-3.707a1 1 0 011.09-.217zM12.293 7.293a1 1 0 011.414 0L15 8.586l1.293-1.293a1 1 0 111.414 1.414L16.414 10l1.293 1.293a1 1 0 01-1.414 1.414L15 11.414l-1.293 1.293a1 1 0 01-1.414-1.414L13.586 10l-1.293-1.293a1 1 0 010-1.414z" clip-rule="evenodd" />
-          </svg>
-        </div>) :
-        (
-          <div className="rounded-md bg-white p-2">
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" viewBox="0 0 20 20" fill="#000000">
-              <path fill-rule="evenodd" d="M9.383 3.076A1 1 0 0110 4v12a1 1 0 01-1.707.707L4.586 13H2a1 1 0 01-1-1V8a1 1 0 011-1h2.586l3.707-3.707a1 1 0 011.09-.217zM14.657 2.929a1 1 0 011.414 0A9.972 9.972 0 0119 10a9.972 9.972 0 01-2.929 7.071 1 1 0 01-1.414-1.414A7.971 7.971 0 0017 10c0-2.21-.894-4.208-2.343-5.657a1 1 0 010-1.414zm-2.829 2.828a1 1 0 011.415 0A5.983 5.983 0 0115 10a5.984 5.984 0 01-1.757 4.243 1 1 0 01-1.415-1.415A3.984 3.984 0 0013 10a3.983 3.983 0 00-1.172-2.828 1 1 0 010-1.415z" clip-rule="evenodd" />
-            </svg>
-          </div>
-        )}
-      </div>
-      <ReactPlayer
-        className="relative video z-10"
-        url={Video}
-        playing={true}
-        muted={mute}
-        loop={true}
-        width="100%"
-        height="100%"
-      />
-    </section>
+  const [ref, inView] = useInView()
+  const [ref2, inView2] = useInView()
 
+  return (
+    <>
+      <section
+        ref={ref}
+        className="h-[70vh] md:h-screen text-white hero-bg relative w-full">
+        <img className={`hidden md:block relative pt-20 z-10 transition-opacity ease-in-out duration-300 ${inView ? 'opacity-100' : 'opacity-0'}`} src={Clouds} alt="clouds" />
+      </section>
+
+      <section
+        ref={ref2}
+        className="h-[70vh] md:h-screen text-white hero-bg second relative w-full">
+        <img className={`hidden md:block relative pt-20 z-10 transition-opacity ease-in-out duration-300 ${inView2 ? 'opacity-100' : 'opacity-0'}`} src={Clouds} alt="clouds" />
+      </section>
+
+      <section className="h-[70vh] md:h-screen text-white hero-bg third relative w-full">
+      </section>
+    </>
   )
 }
 

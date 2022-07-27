@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import Slider from './Slick'
 import { AnimatePresence, motion } from 'framer-motion'
-import SectionTitle from './SectionTitle'
 import VaultVideo from '../assets/vault.mp4'
 import ReactPlayer from 'react-player'
 
@@ -17,7 +16,6 @@ const Vault = () => {
 
   return (
     <>
-      <SectionTitle text={"Into The Vault"} />
       <section className="bg-black">
         <AnimatePresence exitBeforeEnter>
           {
