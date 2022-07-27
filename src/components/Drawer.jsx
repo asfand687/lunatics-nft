@@ -4,12 +4,12 @@ import { AiOutlineClose } from 'react-icons/ai'
 
 const Drawer = ({ showDrawer, setShowDrawer }) => {
   return (
-    <div className={`w-80 md:w-[330px] rounded-lg shadow-2xl z-50 bg-white fixed transition-all duration-200 ease-in-out top-20 h-[490px] p-4 ${showDrawer ? 'right-0' : '-right-full'}`}>
-      <div onClick={() => setShowDrawer(false)} className="flex flex-row-reverse font-sans  cursor-pointer">
+    <div className={` rounded-lg shadow-2xl z-50 bg-white fixed transition-all duration-200 ease-in-out top-20 p-4 ${showDrawer ? 'right-0' : '-right-full'}`}>
+      <div onClick={() => setShowDrawer(false)} className="flex flex-row-reverse font-sans cursor-pointer">
         <span className='px-2 cursor-pointer font-sans'><AiOutlineClose className="text-2xl" /></span>
       </div>
 
-      <div className="flex items-center text-2xl font-medium flex-col mt-10 space-y-6">
+      <div className="flex items-center text-lg font-medium flex-col space-y-2">
         <Link onClick={() => setShowDrawer(!showDrawer)} to="/about">
           About
         </Link>
@@ -22,11 +22,11 @@ const Drawer = ({ showDrawer, setShowDrawer }) => {
         <Link onClick={() => setShowDrawer(!showDrawer)} to="/faq">
           FAQ
         </Link>
-        <div className="space-y-4 inline-flex flex-col">
-          <button className="w-60 h-14 bg-[#0300AD] hover:opacity-90 transition-opacity ease-in-out duration-300 text-white rounded-full font-muse text-xl font-medium">
+        <div className="space-y-4 flex flex-col items-center">
+          <button className="w-48 py-1 bg-[#0300AD] hover:opacity-90 transition-opacity ease-in-out duration-300 text-white rounded-full font-muse text-lg font-medium">
             Mint
           </button>
-          <button className="w-60 h-14 bg-[#0300AD] hover:opacity-90 transition-opacity ease-in-out duration-300 text-white rounded-full font-muse text-xl font-medium">
+          <button className="w-48 py-1 bg-[#0300AD] hover:opacity-90 transition-opacity ease-in-out duration-300 text-white rounded-full font-muse text-lg font-medium">
             Connect Wallet
           </button>
         </div>
