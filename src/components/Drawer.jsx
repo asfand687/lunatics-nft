@@ -4,7 +4,7 @@ import { AiOutlineClose } from 'react-icons/ai'
 
 const Drawer = ({ showDrawer, setShowDrawer }) => {
   return (
-    <div className={`w-80 md:w-[434px] rounded-lg shadow-2xl z-50 bg-white fixed transition-all duration-200 ease-in-out top-20 h-[490px] p-4 ${showDrawer ? 'right-0' : '-right-full'}`}>
+    <div className={`w-80 md:w-[330px] rounded-lg shadow-2xl z-50 bg-white fixed transition-all duration-200 ease-in-out top-20 h-[490px] p-4 ${showDrawer ? 'right-0' : '-right-full'}`}>
       <div onClick={() => setShowDrawer(false)} className="flex flex-row-reverse font-sans  cursor-pointer">
         <span className='px-2 cursor-pointer font-sans'><AiOutlineClose className="text-2xl" /></span>
       </div>
