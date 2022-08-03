@@ -1,11 +1,11 @@
 import React from 'react'
-import SectionTitle from '../components/SectionTitle'
+import Navbar from '../components/Navbar'
 import TeamSection from '../components/TeamSection'
 
 const Team = () => {
   return (
     <div>
-      <SectionTitle text={"Meet The Team"} />
+      <Navbar classes="w-full py-4 bg-[#0300AD]" />
       <TeamSection />
     </div>
   )

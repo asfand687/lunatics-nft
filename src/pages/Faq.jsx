@@ -8,6 +8,7 @@ import Marker6 from '../assets/marker-006.svg'
 import Marker7 from '../assets/marker-007.svg'
 import Marker8 from '../assets/marker-008.svg'
 import Marker9 from '../assets/marker-009.svg'
+import Navbar from '../components/Navbar'
 
 const faqData = [
   {
@@ -70,13 +71,16 @@ const faqData = [
 const Faq = () => {
 
   return (
-    <div className="w-full pt-16 pb-32 lg:max-w-[1300px] 2xl:max-w-full 2xl:mx-[3%] px-4 lg:px-8 mx-auto">
-      {
-        faqData.map(faq => (
-          <Accordion key={faq.id} faq={faq} />
-        ))
-      }
-    </div>
+    <>
+      <Navbar classes="w-full py-4 bg-[#0300AD]" />
+      <div className="w-full pt-16 pb-32 lg:max-w-[1300px] 2xl:max-w-full px-4 lg:px-8 mx-auto">
+        {
+          faqData.map(faq => (
+            <Accordion key={faq.id} faq={faq} />
+          ))
+        }
+      </div>
+    </>
   )
 }
 
