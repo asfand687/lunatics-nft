@@ -1,11 +1,11 @@
 import React from 'react'
+import Navbar from '../components/Navbar'
 import Phases from '../components/Phases'
-import SectionTitle from '../components/SectionTitle'
 
 const Roadmap = () => {
   return (
     <section>
-      <SectionTitle text={"Roadmap"} />
+      <Navbar classes="w-full py-4 bg-[#0300AD]" />
       <Phases />
     </section>
   )
