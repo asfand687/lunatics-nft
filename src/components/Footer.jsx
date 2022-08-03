@@ -7,7 +7,7 @@ import Lunatics from '../assets/lunatics-sticker.svg'
 
 const Footer = () => {
   return (
-    <footer className="bg-[#0300AD] px-4 text-white py-4">
+    <footer className="bg-[#0300AD] px-4 text-white py-4 text-sm">
       <div className="w-full lg:max-w-[1300px] 2xl:max-w-full 2xl:pr-6 mx-auto flex flex-col md:flex-row md:justify-between md:items-start">
         <article className="hidden md:flex flex-1 flex-col px-4 md:max-w-[380px] text-base">
           <img className="w-[189px]" src={Lunatics} alt="Lunatics" />
@@ -16,13 +16,13 @@ const Footer = () => {
 
         <article className="w-full flex lg:space-x-4 md:max-w-[560px] 2xl:max-w-[750px] text-left">
           <img className="md:mx-auto" src={Logo} alt="logo white" />
-          <p className="leading-5 font-light text-sm hidden md:block pt-1">Lunatics is a registered trademark of Lunatics Inc. All Rights Reserved. Lunatics All logos are registered trademarks of their respective owners. All contents of this document, unless otherwise credited, are copyright © 2022 Lunatics Inc.</p>
+          <p className="leading-5 font-light hidden md:block pt-1">Lunatics is a registered trademark of Lunatics Inc. All Rights Reserved. Lunatics All logos are registered trademarks of their respective owners. All contents of this document, unless otherwise credited, are copyright © 2022 Lunatics Inc.</p>
         </article>
 
-        <article className="flex-1 md:flex md:max-w-[350px] justify-end md:space-x-2">
+        <article className="flex-1 md:flex md:max-w-[350px] justify-end md:space-x-4">
           <div className="md:text-left">
             <h2 className="md:hidden border-b border-white pb-2 w-32 pt-4 mb-4">Legal</h2>
-            <article>
+            <article className="tracking-tighter">
               <p>Terms Of Service</p>
             </article>
             <article>

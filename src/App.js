@@ -14,17 +14,19 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-    <BrowserRouter>
-      <Navbar />
-      <Routes>
-        <Route exact path="/" element={<Home />} />
-        <Route path='/about' exact element={<About />} />
-        <Route path='/faq' exact element={<Faq />} />
-        <Route path='/roadmap' exact element={<Roadmap />} />
-        <Route path='/team' exact element={<Team />} />
-      </Routes>
-      <Footer />
-    </BrowserRouter>
+    <main>
+      <BrowserRouter>
+        <Navbar />
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+          <Route path='/about' exact element={<About />} />
+          <Route path='/faq' exact element={<Faq />} />
+          <Route path='/roadmap' exact element={<Roadmap />} />
+          <Route path='/team' exact element={<Team />} />
+        </Routes>
+        <Footer />
+      </BrowserRouter>
+    </main>
   );
 }
 
