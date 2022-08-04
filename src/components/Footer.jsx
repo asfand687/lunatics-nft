@@ -7,7 +7,7 @@ import Lunatics from '../assets/lunatics-sticker.svg'
 
 const Footer = () => {
   return (
-    <footer className="bg-[#0300AD] text-white py-1 text-sm">
+    <footer className="bg-[#0300AD] text-white py-4 text-sm">
       <div className="w-full px-4 lg:px-8 mx-auto flex flex-col md:flex-row md:justify-between md:items-start">
         <article className="hidden md:flex flex-1 flex-col  md:max-w-[380px] text-base">
           <img className="w-[150px]" src={Lunatics} alt="Lunatics" />
