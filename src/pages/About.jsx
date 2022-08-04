@@ -5,7 +5,7 @@ import Navbar from '../components/Navbar'
 const About = () => {
   return (
     <section>
-      <Navbar classes="w-full py-4 bg-[#0300AD]" />
+      <Navbar classes="w-full py-1 bg-[#0300AD]" />
       <AboutHero />
     </section>
 

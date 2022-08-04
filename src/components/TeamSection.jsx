@@ -46,7 +46,8 @@ const teamData = [
 
 const TeamSection = () => {
   return (
-    <section className="w-full space-y-24 pt-16 pb-32 lg:max-w-[1300px] 2xl:max-w-full px-4 lg:px-8 mx-auto">
+    <section className="w-full space-y-24 pt-16 pb-32 lg:max-w-[1450px] 2xl:max-w-full px-4 lg:px-8 mx-auto">
+      <h1 className="font-muse text-5xl py-6 font-bold">Meet The Team</h1>
       {
         teamData.map(team => (
           <TeamMember

@@ -7,16 +7,16 @@ import Lunatics from '../assets/lunatics-sticker.svg'
 
 const Footer = () => {
   return (
-    <footer className="bg-[#0300AD] text-white py-4 text-sm">
+    <footer className="bg-[#0300AD] text-white py-1 text-sm">
       <div className="w-full px-4 lg:px-8 mx-auto flex flex-col md:flex-row md:justify-between md:items-start">
         <article className="hidden md:flex flex-1 flex-col  md:max-w-[380px] text-base">
-          <img className="w-[189px]" src={Lunatics} alt="Lunatics" />
-          <p className="text-base font-light pt-2 leading-5">Lorem ipsum dolor, sit amet consectetur adipisicing elit. dolores dolorem et aperiam? Bconsectetur adipisci recusandae repellat?</p>
+          <img className="w-[150px]" src={Lunatics} alt="Lunatics" />
+          <p className="text-base font-light pt-2 leading-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. dolores dolorem et aperiam? Bconsectetur adipisci recusandae repellat?</p>
         </article>
 
         <article className="w-full flex lg:space-x-4 md:max-w-[560px] 2xl:max-w-[750px] text-left">
-          <img className="md:mx-auto" src={Logo} alt="logo white" />
-          <p className="leading-5 font-light hidden md:block pt-1">Lunatics is a registered trademark of Lunatics Inc. All Rights Reserved. Lunatics All logos are registered trademarks of their respective owners. All contents of this document, unless otherwise credited, are copyright © 2022 Lunatics Inc.</p>
+          <img className="md:mx-auto w-8" src={Logo} alt="logo white" />
+          <p className="leading-4 font-light hidden md:block pt-1">Lunatics is a registered trademark of Lunatics Inc. All Rights Reserved. Lunatics All logos are registered trademarks of their respective owners. All contents of this document, unless otherwise credited, are copyright © 2022 Lunatics Inc.</p>
         </article>
 
         <article className="flex-1 md:flex md:max-w-[350px] justify-end md:space-x-4">
