@@ -5,7 +5,7 @@ import TeamSection from '../components/TeamSection'
 const Team = () => {
   return (
     <div>
-      <Navbar classes="w-full py-1 bg-[#0300AD]" />
+      <Navbar classes="w-full py-1" />
       <TeamSection />
     </div>
   )

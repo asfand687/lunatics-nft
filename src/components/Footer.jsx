@@ -1,16 +1,16 @@
 import React from 'react'
-import Logo from '../assets/logo-white.svg'
+import Logo from '../assets/logo-black.svg'
 import Youtube from '../assets/youtube.svg'
 import Instagram from '../assets/insta.svg'
 import Twitter from '../assets/twitter.svg'
-import Lunatics from '../assets/lunatics-sticker.svg'
+import { ReactComponent as Lunatics } from '../assets/lunatics-sticker.svg'
 
 const Footer = () => {
   return (
-    <footer className="bg-[#0300AD] text-white py-4 text-sm">
+    <footer className="bg-white text-black py-4 text-sm">
       <div className="w-full px-4 lg:px-8 mx-auto flex flex-col md:flex-row md:justify-between md:items-start">
         <article className="hidden md:flex flex-1 flex-col  md:max-w-[380px] text-base">
-          <img className="w-[150px]" src={Lunatics} alt="Lunatics" />
+          <Lunatics />
           <p className="text-base font-light pt-2 leading-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. dolores dolorem et aperiam? Bconsectetur adipisci recusandae repellat?</p>
         </article>
 

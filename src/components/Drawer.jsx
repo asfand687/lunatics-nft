@@ -9,7 +9,7 @@ const Drawer = ({ showDrawer, setShowDrawer }) => {
         <span className='px-2 cursor-pointer font-sans'><AiOutlineClose className="text-2xl" /></span>
       </div>
 
-      <div className="flex items-center text-lg font-medium flex-col space-y-2">
+      <div className="flex items-center text-lg font-medium flex-col space-y-2 font-muse">
         <Link onClick={() => setShowDrawer(!showDrawer)} to="/about">
           About
         </Link>
@@ -23,10 +23,10 @@ const Drawer = ({ showDrawer, setShowDrawer }) => {
           FAQ
         </Link>
         <div className="space-y-4 flex flex-col items-center">
-          <button className="w-48 py-1 bg-[#0300AD] hover:opacity-90 transition-opacity ease-in-out duration-300 text-white rounded-full font-muse text-lg font-medium">
+          <button className="w-48 py-1 bg-black hover:opacity-90 transition-opacity ease-in-out duration-300 text-white rounded-full font-muse text-lg font-medium">
             Mint
           </button>
-          <button className="w-48 py-1 bg-[#0300AD] hover:opacity-90 transition-opacity ease-in-out duration-300 text-white rounded-full font-muse text-lg font-medium">
+          <button className="w-48 py-1 bg-black hover:opacity-90 transition-opacity ease-in-out duration-300 text-white rounded-full font-muse text-lg font-medium">
             Connect Wallet
           </button>
         </div>

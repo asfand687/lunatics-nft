@@ -13,7 +13,7 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-    <main>
+    <main className="bg-black">
       <BrowserRouter>
         <Routes>
           <Route exact path="/" element={<Home />} />

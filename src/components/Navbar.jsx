@@ -7,8 +7,8 @@ import Drawer from './Drawer'
 const Navbar = ({ classes }) => {
   const [showDrawer, setShowDrawer] = useState(false)
   return (
-    <nav className={`${classes}`}>
-      <section className="lg:text-white px-4 lg:px-8 flex justify-between items-center">
+    <nav className={`${classes} px-4 max-w-[1400px] mx-auto`}>
+      <section className="lg:text-white flex pb-4 justify-between items-center border-b border-white ">
         <div className="flex relative z-50 justify-between items-center md:block">
           <Link to="/"><img className="w-8" src={Logo} alt="logo" /></Link>
         </div>

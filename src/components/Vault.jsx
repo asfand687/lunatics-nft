@@ -25,11 +25,11 @@ const Vault = () => {
                 <section className={`h-full w-full transform transition-all ease-out z-10`}>
                   <article className={`absolute uppercase md:pl-20 z-10 bg-black bg-opacity-50 w-full h-full flex items-center space-y-6 md:space-y-0 transition-opacity duration-1000 ease-in-out ${hideText && 'opacity-0'}`}>
                     <div className="max-w-[40rem] text-white">
-                      <h2 className="text-4xl md:text-5xl font-bold tracking-tighter">Enter Your Email To <br /> Gain Access To The Vault</h2>
-                      <h3 className="text-2xl md:text-3xl tracking-tighter font-semibold pb-4">Get Added To Our Email List</h3>
+                      <h2 className="text-4xl font-medium tracking-tighter font-muse pb-8">Enter Your Email To <br /> Gain Access To The Vault</h2>
+                      <h3 className="text-2xl md:text-3xl tracking-tighter  pb-4 font-muse">Get Added To Our Email List</h3>
                       <div className="relative">
                         <input className="w-[30rem] text-lg bg-gray-200 rounded-3xl px-4 py-2 outline-none border border-transparent focus:border-gray-400" placeholder='example@gmail.com' />
-                        <button onClick={handleSubmit} className="bg-[#0300AD] font-sans h-[47px] font-semibold tracking-wide uppercase w-[120px] rounded-3xl text-white absolute top-0 right-20 hover:opacity-80">Submit</button>
+                        <button onClick={handleSubmit} className="bg-black font-sans h-[47px] font-semibold tracking-wide uppercase w-[120px] rounded-3xl text-white absolute top-0 right-0 hover:opacity-80">Submit</button>
                       </div>
                     </div>
                   </article>

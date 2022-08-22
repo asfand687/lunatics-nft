@@ -10,55 +10,57 @@ const teamData = [
   {
     id: 1,
     img: Team01,
-    heading: "Team Member One",
-    reverse: false,
+    heading: "Name 1",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit eget elementum arcu, purus in at. Tellus sed feugiat enim, eget porta est dui. Vel in sit arcu nec quis eu. Amet lacus, ornare massa et orci. Morbi blandit diam nisl tempor rhoncus elit malesuada."
   },
   {
     id: 2,
     img: Team02,
-    heading: "Team Member Two",
-    reverse: true,
+    heading: "Name 2",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit eget elementum arcu, purus in at. Tellus sed feugiat enim, eget porta est dui. Vel in sit arcu nec quis eu. Amet lacus, ornare massa et orci. Morbi blandit diam nisl tempor rhoncus elit malesuada."
   },
   {
     id: 3,
     img: Team03,
-    heading: "Team Member Three",
-    reverse: false,
+    heading: "Name 3",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit eget elementum arcu, purus in at. Tellus sed feugiat enim, eget porta est dui. Vel in sit arcu nec quis eu. Amet lacus, ornare massa et orci. Morbi blandit diam nisl tempor rhoncus elit malesuada."
   },
   {
     id: 4,
     img: Team04,
-    heading: "Team Member Four",
-    reverse: true,
+    heading: "Name 4",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit eget elementum arcu, purus in at. Tellus sed feugiat enim, eget porta est dui. Vel in sit arcu nec quis eu. Amet lacus, ornare massa et orci. Morbi blandit diam nisl tempor rhoncus elit malesuada."
   },
   {
     id: 5,
     img: Team05,
-    heading: "Team Member Four",
-    reverse: false,
+    heading: "Name 5",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit eget elementum arcu, purus in at. Tellus sed feugiat enim, eget porta est dui. Vel in sit arcu nec quis eu. Amet lacus, ornare massa et orci. Morbi blandit diam nisl tempor rhoncus elit malesuada."
-  }
+  },
+  {
+    id: 6,
+    img: Team01,
+    heading: "Name 6",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit eget elementum arcu, purus in at. Tellus sed feugiat enim, eget porta est dui. Vel in sit arcu nec quis eu. Amet lacus, ornare massa et orci. Morbi blandit diam nisl tempor rhoncus elit malesuada."
+  },
 ]
 
 const TeamSection = () => {
   return (
-    <section className="w-full space-y-24 pt-16 pb-32 lg:max-w-[1450px] 2xl:max-w-full px-4 lg:px-8 mx-auto">
-      <h1 className="font-muse text-5xl py-6 font-bold">Meet The Team</h1>
-      {
-        teamData.map(team => (
-          <TeamMember
-            key={team.id}
-            img={team.img}
-            heading={team.heading}
-            reverse={team.reverse}
-            description={team.description}
-          />
-        ))
-      }
+    <section className="w-full text-white pb-32 lg:max-w-[1350px] 2xl:max-w-full px-4 lg:px-8 mx-auto">
+      <h1 className="font-heading text-6xl py-6 font-bold uppercase">Meet The Team</h1>
+      <div className="grid grid-cols-3 gap-8">
+        {
+          teamData.map(team => (
+            <TeamMember
+              key={team.id}
+              img={team.img}
+              heading={team.heading}
+              description={team.description}
+            />
+          ))
+        }
+      </div>
 
     </section>
   )

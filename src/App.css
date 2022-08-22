@@ -1,10 +1,19 @@
 @font-face {
-  font-family: 'DecimaMonoPro';
-  src: local('DecimaMonoPro'), url("./assets/DecimaMonoPro.ttf") format('truetype');
+  font-family: 'MonumentExtendedRegular';
+  src: local('MonumentExtendedRegular'), url("./assets/MonumentExtendedRegular.otf") format('opentype');
+}
+
+@font-face {
+  font-family: 'AndaleMono.ttf';
+  src: local('AndaleMono'), url("./assets/AndaleMono.ttf") format('truetype');
+}
+
+.font-heading {
+  font-family: 'MonumentExtendedRegular'
 }
 
 body {
-  font-family: 'DecimaMonoPro';
+  font-family: 'AndaleMono';
 }
 
 .affiliates::after {
@@ -49,15 +58,15 @@ body {
 }
 
 .hero-bg {
-  background: url('./assets/hero-bg.jpg') no-repeat center center/cover;
+  background: url('./assets/hero-bg.jpeg') no-repeat center center/cover;
 }
 
 .hero-bg.second {
-  background: url('./assets/hero-02.png') no-repeat center center/cover;
+  background: url('./assets/hero-02.jpeg') no-repeat center center/cover;
 }
 
 .hero-bg.third {
-  background: url('./assets/hero-03.png') no-repeat center center/cover;
+  background: url('./assets/hero-03.jpeg') no-repeat center center/cover;
 }
 
 /* Chrome, Safari and Opera */
@@ -76,4 +85,18 @@ body {
   .video video {
     object-fit: cover;
   }
+}
+
+.radial {
+  z-index: 3;
+  background: radial-gradient(#333, #3985ff00 80%);
+  opacity: 0;
+}
+
+.spotify:hover {
+  cursor: pointer;
+}
+
+.spotify:hover .radial {
+  opacity: 0.8;
 }
