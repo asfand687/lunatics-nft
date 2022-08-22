@@ -1,9 +1,4 @@
 import Navbar from '../components/Navbar'
-import { ReactComponent as FAQ01 } from '../assets/faq-marker001.svg'
-import { ReactComponent as FAQ02 } from '../assets/faq-marker002.svg'
-import { ReactComponent as FAQ03 } from '../assets/faq-marker003.svg'
-import { ReactComponent as FAQ04 } from '../assets/faq-marker004.svg'
-import { ReactComponent as FAQ05 } from '../assets/faq-marker005.svg'
 import { ReactComponent as FaqTitle } from '../assets/faq-title.svg'
 
 

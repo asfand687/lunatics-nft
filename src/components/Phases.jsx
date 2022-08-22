@@ -1,6 +1,4 @@
 import React from 'react'
-import { ReactComponent as ProgressComplete } from '../assets/progress-complete.svg'
-import { ReactComponent as ProgressPending } from '../assets/progress-pending.svg'
 
 const Phases = () => {
   return (
