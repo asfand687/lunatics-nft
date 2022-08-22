@@ -6,7 +6,9 @@ import Navbar from '../components/Navbar'
 const Home = () => {
   return (
     <div className="App">
-      <Navbar classes="w-full absolute left-10 top-0 z-40 bg-transparent" />
+      <div className="absolute top-0 left-0 w-full">
+      <Navbar classes="w-full bg-transparent max-w-[1400px]" />
+      </div>
       <Hero />
       <Vault />
     </div>

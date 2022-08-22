@@ -6,7 +6,7 @@ import PageTitle from '../components/PageTitle'
 const Roadmap = () => {
   return (
     <section>
-      <Navbar classes="w-full py-1 bg-black" />
+      <Navbar classes="w-full py-1 bg-black max-w-[1400px]" />
       <PageTitle title="Roadmap" classes="-left-32" />
       <Phases />
     </section>

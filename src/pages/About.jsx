@@ -7,8 +7,8 @@ import TeamSection from '../components/TeamSection'
 const About = () => {
   return (
     <section>
-      <Navbar classes="w-full py-1 bg-black" />
-      <PageTitle title="About Us" classes="-right-8" />
+      <Navbar classes="w-full max-w-[1400px] py-1 bg-black" />
+      <PageTitle title="About Us" classes="-right-40" />
       <AboutHero />
       <TeamSection />
     </section>

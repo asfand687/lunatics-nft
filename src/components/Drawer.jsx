@@ -12,9 +12,6 @@ const Drawer = ({ showDrawer, setShowDrawer }) => {
         <Link onClick={() => setShowDrawer(!showDrawer)} to="/roadmap">
           Roadmap
         </Link>
-        <Link onClick={() => setShowDrawer(!showDrawer)} to="/team">
-          Meet The Team
-        </Link>
         <Link onClick={() => setShowDrawer(!showDrawer)} to="/faq">
           FAQ
         </Link>
