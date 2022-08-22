@@ -1,13 +1,9 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { AiOutlineClose } from 'react-icons/ai'
 
 const Drawer = ({ showDrawer, setShowDrawer }) => {
   return (
     <div className={` rounded-lg shadow-2xl z-50 bg-white fixed transition-all duration-200 ease-in-out top-20 p-4 ${showDrawer ? 'right-0' : '-right-full'}`}>
-      <div onClick={() => setShowDrawer(false)} className="flex flex-row-reverse font-sans cursor-pointer">
-        <span className='px-2 cursor-pointer font-sans'><AiOutlineClose className="text-2xl" /></span>
-      </div>
 
       <div className="flex items-center text-lg font-medium flex-col space-y-2 font-muse">
         <Link onClick={() => setShowDrawer(!showDrawer)} to="/about">
