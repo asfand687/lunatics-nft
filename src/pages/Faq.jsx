@@ -10,7 +10,7 @@ const Faq = () => {
       <section className="px-4 max-w-[1400px] mx-auto">
         <FaqTitle className="w-full" />
       </section>
-      <div className="w-full pt-4 pb-32 text-white lg:max-w-[1400px] 2xl:max-w-full px-4 mx-auto space-y-14">
+      <div className="w-full pt-4 pb-32 text-white lg:max-w-[1400px] px-4 mx-auto space-y-14">
         <article className="flex flex-col lg:flex-row lg:justify-center lg:gap-x-8 lg:items-stretch">
           <div className="p-[6px] rounded-[0.7rem] border border-white">
             <div className="w-52 border rounded-lg border-gray-200 text-[150px] font-bold flex justify-center items-center leading-snug font-heading">1</div>

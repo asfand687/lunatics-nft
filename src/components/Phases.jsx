@@ -2,9 +2,9 @@ import React from 'react'
 
 const Phases = () => {
   return (
-    <section className="flex py-14">
-      <article className="w-44"></article>
-      <article className="w-full flex-1 pb-32 lg:max-w-[1270px] text-white px-4 lg:px-8 mx-auto">
+    <section className="flex max-w-[1400px] mx-auto py-14">
+      <article className="w-60"></article>
+      <article className="w-full flex-1 pb-32 text-white px-4 mx-auto">
         <section className="flex flex-col space-y-6 lg:space-y-20">
           <article className="flex-1">
             <div className="flex items-center font-heading uppercase border-b pb-6 border-gray-300">
@@ -92,7 +92,7 @@ const Phases = () => {
               <h2 className="text-6xl font-normal hidden lg:block pr-8">
                 Phase 3
               </h2>
-              <div className="bg-[#69F41F] flex items-center justify-center flex-1 text-center text-white font-heading font-medium tracking-wide text-5xl">
+              <div className="bg-gradient-to-r from-[#69F41F] via-[#69F41F] to-[#ffe924] flex items-center justify-center flex-1 text-center text-white font-heading font-medium tracking-wide text-5xl">
                 <h2 className="leading-snug">In Progre<span className="text-black">ss</span></h2>
               </div>
             </div>

@@ -21,6 +21,10 @@ body {
   cursor: url('./assets/cursor.svg'), auto;
 }
 
+.scrollPad {
+  scroll-padding: 2rem;
+}
+
 .vault-text {
   padding-left: calc(10vw + 10px);
 }
