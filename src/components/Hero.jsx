@@ -1,6 +1,4 @@
 import React,{useEffect, useRef, useState} from 'react'
-import Clouds from '../assets/clouds.png'
-import { useInView } from 'react-intersection-observer'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
