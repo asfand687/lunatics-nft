@@ -8,7 +8,7 @@ const About = () => {
   return (
     <section>
       <Navbar classes="w-full max-w-[1400px] py-1 bg-black" />
-      <PageTitle title="About Us" classes="-right-40" />
+      <PageTitle title="About Us" classes="-right-24" />
       <AboutHero />
       <TeamSection />
     </section>

@@ -10,7 +10,7 @@ const Hero = () => {
   })
 
   return (
-    <div onmouse className="snap-y snap-mandatory overflow-scroll no-scrollbar h-[100vh]">
+    <div className="snap-y snap-mandatory overflow-scroll no-scrollbar h-[100vh]">
       <section
         ref={ref}
         className="snap-center h-[900vh] md:h-screen text-white hero-bg flex items-end relative w-full">

@@ -7,7 +7,7 @@ const Roadmap = () => {
   return (
     <section>
       <Navbar classes="w-full py-1 bg-black max-w-[1400px]" />
-      <PageTitle title="Roadmap" classes="-left-32" />
+      <PageTitle title="Roadmap" classes="-left-16" />
       <Phases />
     </section>
   )

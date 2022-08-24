@@ -10,7 +10,7 @@ const AboutHero = () => {
     document.querySelector('.radial').style.left = `calc(${e.clientX - x}px)`
   }
   return (
-    <section className="w-full text-white pt-24 py-16 lg:max-w-[1400px] 2xl:max-w-full px-4 mx-auto mb-2">
+    <section className="w-full text-white pt-24 py-16 lg:max-w-[1400px] px-4 mx-auto mb-2">
       <div className="flex flex-col lg:flex-row lg:space-x-20">
         <article className="flex-[2] border border-gray-300 rounded-xl p-[6px]">
           <div className="border border-gray-300 rounded-xl p-8 h-full">
