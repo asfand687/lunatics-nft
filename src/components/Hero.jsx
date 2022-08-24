@@ -16,13 +16,11 @@ const Hero = () => {
     if (e.wheelDelta > 0) {
       slider.current.slickNext()
     } else {
-      window.scroll(0, 0)
       slider.current.slickPrev()
     }
   }
 
   const settings = {
-    fade: true,
     lazyLoad: true,
     speed: 300,
     slidesToShow: 1,
@@ -33,7 +31,7 @@ const Hero = () => {
     }
   }
 
-  console.log(currentSlide)
+
 
   useEffect(() => {
     window.addEventListener("wheel", scroll, true);
