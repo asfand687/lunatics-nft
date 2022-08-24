@@ -12,9 +12,17 @@
   font-family: 'MonumentExtendedRegular'
 }
 
+.hamburger:hover {
+  cursor: pointer !important;
+}
+
 body {
   font-family: 'AndaleMono';
-  cursor: url('./assets/logo-white.svg'), auto;
+  cursor: url('./assets/cursor.svg'), auto;
+}
+
+.vault-text {
+  padding-left: calc(10vw + 10px);
 }
 
 .affiliates::after {
@@ -59,15 +67,15 @@ body {
 }
 
 .hero-bg {
-  background: url('./assets/hero-bg.jpeg') no-repeat center center/cover;
+  background: url('./assets/Earth.jpg') no-repeat center center/cover;
 }
 
 .hero-bg.second {
-  background: url('./assets/hero-02.jpeg') no-repeat center center/cover;
+  background: url('./assets/Cloud.jpg') no-repeat center center/cover;
 }
 
 .hero-bg.third {
-  background: url('./assets/hero-03.jpeg') no-repeat center center/cover;
+  background: url('./assets/Forest.jpg') no-repeat center center/cover;
 }
 
 /* Chrome, Safari and Opera */

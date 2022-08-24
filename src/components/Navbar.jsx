@@ -11,11 +11,11 @@ const Navbar = ({ classes }) => {
         <div className="flex relative z-50 justify-between items-center md:block">
           <Link to="/"><img className="w-8" src={Logo} alt="logo" /></Link>
         </div>
-        <div className={`relative z-50 ${showDrawer ? "" : "space-y-2"}`} onClick={() => setShowDrawer(!showDrawer)}>
-          <div className={`bg-white w-12 h-1 transition-transform duration-300 ease-in-out ${showDrawer ? "transform rotate-45" : ""}`}></div>
-          <div className={`bg-white w-12 h-1 transition-transform duration-300 ease-in-out ${showDrawer ? "transform -translate-y-1 -rotate-45" : ""}`}></div>
-          <div className={`bg-white w-12 h-1 transition-transform duration-300 ease-in-out ${showDrawer ? "transform -translate-y-2 -rotate-45" : ""}`}></div>
-        </div>
+        <button className={`relative z-50 hamburger ${showDrawer ? "" : "space-y-1"}`} onClick={() => setShowDrawer(!showDrawer)}>
+          <div className={`bg-white w-8 h-1 transition-transform duration-300 ease-in-out ${showDrawer ? "transform rotate-45" : ""}`}></div>
+          <div className={`bg-white w-8 h-1 transition-transform duration-300 ease-in-out ${showDrawer ? "transform -translate-y-1 -rotate-45" : ""}`}></div>
+          <div className={`bg-white w-8 h-1 transition-transform duration-300 ease-in-out ${showDrawer ? "transform -translate-y-2 -rotate-45" : ""}`}></div>
+        </button>
       </section>
       <Drawer showDrawer={showDrawer} setShowDrawer={setShowDrawer} />
     </nav>
