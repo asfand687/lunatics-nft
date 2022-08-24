@@ -24,8 +24,8 @@ import Marker10 from '../assets/marker-010.svg'
 import Marker11 from '../assets/marker-011.svg'
 import ArrowLeft from '../assets/arrow-narrow-left.svg'
 import ArrowRight from '../assets/arrow-narrow-right.svg'
-import Slider from "react-slick";
 import Shadow from '../assets/shadow.png'
+import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { motion } from 'framer-motion'

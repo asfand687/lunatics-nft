@@ -1,36 +1,65 @@
-import React from 'react'
+import React,{useEffect, useRef, useState} from 'react'
 import Clouds from '../assets/clouds.png'
 import { useInView } from 'react-intersection-observer'
-
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const Hero = () => {
-  const [ref, inView] = useInView({
-    
-      threshold: 0.4
-    
-  })
-  const [ref2, inView2] = useInView({
-    threshold: 0.1
-  })
+  const slider = useRef(null)
+  const [currentSlide, setCurrentSlide] = useState(0)
 
-  console.log("In veiw", inView)
+  const scroll = (e) => {
+
+    if (slider === null)
+        return 0;
+
+    if(e.wheelDelta > 0) {
+      slider.current.slickNext()
+    } else {
+      window.scroll(0,0)
+      slider.current.slickPrev()
+    }
+  }
+
+
+  const settings = {
+    lazyLoad: true,
+    speed: 300,
+    slidesToShow: 1,
+    vertical: true,
+    centerPadding: '50px',
+    beforeChange: (prev, next) => {
+      setCurrentSlide(next)
+    }
+  }
+
+  console.log(currentSlide)
+ 
+  useEffect(() => {
+    window.addEventListener("wheel", scroll,true);
+
+    return () => {
+        window.removeEventListener("wheel", scroll, true);
+    };
+  }, [])
 
   return (
-    <div className="snap-y snap-mandatory overflow-scroll no-scrollbar h-[100vh]">
+    <div>
+      <Slider {...settings} ref={slider}>
       <section
-        ref={ref}
-        className="snap-center h-[90vh] text-white hero-bg flex items-end relative w-full">
-        <img className={`hidden md:block relative top-96  w-full z-10 transition-opacity ease-in-out duration-300 ${inView ? 'opacity-100' : 'opacity-0'}`} src={Clouds} alt="clouds" />
+        className="snap-center h-screen text-white hero-bg flex items-end relative w-full">
+        
       </section>
 
       <section
-        ref={ref2}
         className="snap-start scrollPad md:h-screen text-white flex items-end  hero-bg second relative w-full">
-        <img className={`hidden md:block relative top-96  w-full z-10 transition-opacity ease-in-out duration-300 ${inView2 ? 'opacity-100' : 'opacity-0'}`} src={Clouds} alt="clouds" />
+        
       </section>
 
-      <section className="snap-center h-[110vh] md:h-screen text-white hero-bg third relative w-full">
+      <section className="snap-center h-screen md:h-screen text-white hero-bg third relative w-full">
       </section>
+    </Slider>
     </div>
   )
 }

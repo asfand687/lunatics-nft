@@ -18,7 +18,7 @@
 
 body {
   font-family: 'AndaleMono';
-  cursor: url('./assets/cursor.svg'), auto;
+  cursor: url('./assets/cursor-1.png'), auto;
 }
 
 .scrollPad {
