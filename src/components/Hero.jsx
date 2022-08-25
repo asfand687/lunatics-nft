@@ -21,8 +21,8 @@ const Hero = () => {
   }
 
   const settings = {
-    lazyLoad: true,
-    speed: 300,
+    fade: true,
+    speed: 800,
     slidesToShow: 1,
     vertical: true,
     centerPadding: '50px',
