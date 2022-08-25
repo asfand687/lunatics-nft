@@ -24,7 +24,6 @@ const Hero = () => {
     fade: true,
     speed: 800,
     slidesToShow: 1,
-    vertical: true,
     centerPadding: '50px',
     beforeChange: (prev, next) => {
       setCurrentSlide(next)
@@ -46,12 +45,12 @@ const Hero = () => {
       <Slider {...settings} ref={slider}>
         <section
           className="snap-center h-screen text-white hero-bg flex items-end relative w-full">
-          <img className={`hidden md:block relative top-96  w-full z-10 transition-opacity ease-in-out duration-300 ${currentSlide === 0 ? "opacity-80" : 'opacity-0'}`} src={Clouds} alt="clouds" />
+          <img className={`hidden md:block absolute -bottom-80 w-full z-10 transition-opacity ease-in-out duration-300 ${currentSlide === 0 ? "opacity-80" : 'opacity-0'}`} src={Clouds} alt="clouds" />
         </section>
 
         <section
-          className="snap-start scrollPad md:h-screen text-white flex items-end  hero-bg second relative w-full">
-          <img className={`hidden md:block relative top-96  w-full z-10 transition-opacity ease-in-out duration-300 ${currentSlide === 1 ? "opacity-80" : 'opacity-0'}`} src={Clouds} alt="clouds" />
+          className="snap-start  scrollPad md:h-screen text-white flex items-end  hero-bg second relative w-full">
+          <img className={`hidden md:block absolute -bottom-80 w-full z-10 transition-opacity ease-in-out duration-300 ${currentSlide === 1 ? "opacity-80" : 'opacity-0'}`} src={Clouds} alt="clouds" />
         </section>
 
         <section className="snap-center h-screen md:h-screen text-white hero-bg third relative w-full">
