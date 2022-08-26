@@ -3,6 +3,7 @@ import Clouds from '../assets/clouds.png'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Vault from './Vault';
 
 const Hero = () => {
   const slider = useRef(null)
@@ -25,9 +26,22 @@ const Hero = () => {
     speed: 1200,
     slidesToShow: 1,
     centerPadding: '50px',
+    dots: true,
     beforeChange: (prev, next) => {
       setCurrentSlide(next)
-    }
+    },
+    appendDots: dots => (
+      <div
+        style={{
+          borderRadius: "10px",
+          padding: "10px",
+          height: "150px",
+          width: "50px",
+        }}
+      >
+        <ul style={{ margin: "0px" }}> {dots} </ul>
+      </div>
+    ),
   }
 
 
@@ -41,20 +55,22 @@ const Hero = () => {
   }, [])
 
   return (
-    <div>
+    <div className="h-screen overflow-hidden">
       <Slider {...settings} ref={slider}>
         <section
           className="snap-center h-screen text-white hero-bg flex items-end relative w-full">
-          <img className={`hidden md:block absolute -bottom-80 w-full z-10 transition-opacity ease-in-out duration-700 ${currentSlide === 0 ? "opacity-80" : 'opacity-0'}`} src={Clouds} alt="clouds" />
+          <img className={`hidden md:block absolute -bottom-80 w-full z-10 transition-opacity ease-in-out delay-500 duration-1000 ${currentSlide === 0 ? "opacity-80" : 'opacity-0'}`} src={Clouds} alt="clouds" />
         </section>
 
         <section
           className="snap-start  scrollPad md:h-screen text-white flex items-end  hero-bg second relative w-full">
-          <img className={`hidden md:block absolute -bottom-80 w-full z-10 transition-opacity ease-in-out duration-700 ${currentSlide === 1 ? "opacity-80" : 'opacity-0'}`} src={Clouds} alt="clouds" />
+          <img className={`hidden md:block absolute -bottom-80 w-full z-10 transition-opacity ease-in-out delay-500 duration-1000 ${currentSlide === 1 ? "opacity-80" : 'opacity-0'}`} src={Clouds} alt="clouds" />
         </section>
 
         <section className="snap-center h-screen md:h-screen text-white hero-bg third relative w-full">
         </section>
+
+        <Vault />
       </Slider>
     </div>
   )

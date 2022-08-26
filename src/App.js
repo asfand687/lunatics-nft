@@ -9,7 +9,6 @@ import About from './pages/About'
 import Faq from './pages/Faq'
 import Roadmap from './pages/Roadmap'
 import Team from './pages/Team'
-import Footer from './components/Footer';
 
 function App() {
   return (
@@ -22,7 +21,6 @@ function App() {
           <Route path='/roadmap' exact element={<Roadmap />} />
           <Route path='/team' exact element={<Team />} />
         </Routes>
-        <Footer />
       </BrowserRouter>
     </main>
   );

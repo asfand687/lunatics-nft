@@ -1,5 +1,6 @@
 import Navbar from '../components/Navbar'
 import { ReactComponent as FaqTitle } from '../assets/faq-title.svg'
+import Footer from '../components/Footer'
 
 
 const Faq = () => {
@@ -75,8 +76,8 @@ const Faq = () => {
             </div>
           </div>
         </article>
-
       </div>
+      <Footer />
     </div>
   )
 }

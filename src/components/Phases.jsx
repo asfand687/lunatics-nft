@@ -11,7 +11,7 @@ const Phases = () => {
               <h2 className="text-6xl font-normal hidden lg:block pr-8">
                 Phase 1
               </h2>
-              <div className="bg-[#69F41F] flex items-center justify-center flex-1 text-center text-white font-heading font-medium tracking-wide text-5xl">
+              <div className="bg-[#69F41F] glow flex items-center justify-center flex-1 text-center text-white font-heading font-medium tracking-wide text-5xl">
                 <h2 className="leading-snug">Complete</h2>
               </div>
             </div>
@@ -52,7 +52,7 @@ const Phases = () => {
               <h2 className="text-6xl font-normal hidden lg:block pr-8">
                 Phase 2
               </h2>
-              <div className="bg-[#69F41F] flex items-center justify-center flex-1 text-center text-white font-heading font-medium tracking-wide text-5xl">
+              <div className="bg-[#69F41F] glow flex items-center justify-center flex-1 text-center text-white font-heading font-medium tracking-wide text-5xl">
                 <h2 className="leading-snug">Complete</h2>
               </div>
             </div>
@@ -92,7 +92,7 @@ const Phases = () => {
               <h2 className="text-6xl font-normal hidden lg:block pr-8">
                 Phase 3
               </h2>
-              <div className="bg-gradient-to-r from-[#69F41F] via-[#69F41F] to-[#ffe924] flex items-center justify-center flex-1 text-center text-white font-heading font-medium tracking-wide text-5xl">
+              <div className="bg-gradient-to-r glow from-[#69F41F] via-[#69F41F] to-[#ffe924] flex items-center justify-center flex-1 text-center text-white font-heading font-medium tracking-wide text-5xl">
                 <h2 className="leading-snug">In Progre<span className="text-black">ss</span></h2>
               </div>
             </div>
