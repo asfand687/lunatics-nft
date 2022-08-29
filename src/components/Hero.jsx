@@ -30,6 +30,7 @@ const Hero = () => {
     dots: true,
     infinite: false,
     swipeToSlide: true,
+    verticalSwiping: true,
     beforeChange: (prev, next) => {
       setCurrentSlide(next)
     },
