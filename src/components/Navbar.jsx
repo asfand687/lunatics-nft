@@ -3,11 +3,11 @@ import Logo from '../assets/logo-white.svg'
 import { Link } from 'react-router-dom'
 import Drawer from './Drawer'
 
-const Navbar = ({ classes }) => {
+const Navbar = ({ classes, border }) => {
   const [showDrawer, setShowDrawer] = useState(false)
   return (
     <nav className={`${classes} px-4 mx-auto`}>
-      <section className="lg:text-white flex pb-4 justify-between items-center border-b border-white ">
+      <section className={`lg:text-white flex pb-4 justify-between items-center ${border}`}>
         <div className="flex relative z-50 justify-between items-center md:block">
           <Link to="/"><img className="w-8" src={Logo} alt="logo" /></Link>
         </div>

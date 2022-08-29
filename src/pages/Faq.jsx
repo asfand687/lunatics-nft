@@ -7,7 +7,7 @@ const Faq = () => {
 
   return (
     <div className="overflow-x-hidden">
-      <Navbar classes="w-full max-w-[1400px] mx-auto py-1 bg-black" />
+      <Navbar classes="w-full max-w-[1400px] 2xl:w-full py-1 bg-black" border="border-b border-white"/>
       <section className="px-4 max-w-[1400px] mx-auto">
         <FaqTitle className="w-full" />
       </section>
