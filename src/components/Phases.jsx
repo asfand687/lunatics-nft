@@ -3,8 +3,8 @@ import React from 'react'
 const Phases = () => {
   return (
     <section className="flex max-w-[1400px] mx-auto py-14">
-      <article className="w-60"></article>
-      <article className="w-full flex-1 pb-32 text-white px-4 mx-auto">
+      <article className="w-60 hidden lg:block"></article>
+      <article className="w-full flex-1 pb-10 lg:pb-32 text-white px-4 mx-auto">
         <section className="flex flex-col space-y-6 lg:space-y-20">
           <article className="flex-1">
             <div className="flex items-center font-heading uppercase border-b pb-6 border-gray-300">
@@ -16,8 +16,8 @@ const Phases = () => {
               </div>
             </div>
 
-            <div className="flex pt-12 gap-x-14">
-              <article className="space-y-2 flex-1">
+            <div className="flex flex-wrap pt-12 gap-6 lg:gap-14">
+              <article className="space-y-2 min-w-[330px] flex-1">
                 <h2 className="font-heading text-2xl font-medium">
                   Off The Walls
                 </h2>
@@ -26,7 +26,7 @@ const Phases = () => {
                 </p>
               </article>
 
-              <article className="space-y-2 flex-1">
+              <article className="space-y-2 min-w-[330px] flex-1">
                 <h2 className="font-heading text-2xl font-medium">
                   LUNATICS Store
                 </h2>
@@ -35,7 +35,7 @@ const Phases = () => {
                 </p>
               </article>
 
-              <article className="space-y-2 flex-1">
+              <article className="space-y-2 min-w-[330px] flex-1">
                 <h2 className="font-heading text-2xl font-medium">
                   3D Collectibles
                 </h2>
@@ -57,8 +57,8 @@ const Phases = () => {
               </div>
             </div>
 
-            <div className="flex pt-12 gap-x-14">
-              <article className="space-y-2 flex-1">
+            <div className="flex flex-wrap pt-12 gap-6 lg:gap-14">
+              <article className="space-y-2 min-w-[330px] lg:flex-1">
                 <h2 className="font-heading text-2xl font-medium">
                   Gen 2 Collection Utility
                 </h2>
@@ -67,7 +67,7 @@ const Phases = () => {
                 </p>
               </article>
 
-              <article className="space-y-2 flex-1">
+              <article className="space-y-2 min-w-[330px] lg:flex-1">
                 <h2 className="font-heading text-2xl font-medium">
                   Launchpad
                 </h2>
@@ -76,7 +76,7 @@ const Phases = () => {
                 </p>
               </article>
 
-              <article className="space-y-2 flex-1">
+              <article className="space-y-2 min-w-[330px] lg:flex-1">
                 <h2 className="font-heading text-2xl font-medium">
                   Event Access
                 </h2>
@@ -97,8 +97,8 @@ const Phases = () => {
               </div>
             </div>
 
-            <div className="flex pt-12 gap-x-14">
-              <article className="space-y-2 flex-1">
+            <div className="flex flex-wrap pt-12 gap-6 lg:gap-14">
+              <article className="space-y-2 min-w-[330px] lg:flex-1">
                 <h2 className="font-heading text-2xl font-medium">
                   LUNATICS Dao
                 </h2>
@@ -107,7 +107,7 @@ const Phases = () => {
                 </p>
               </article>
 
-              <article className="space-y-2 flex-1">
+              <article className="space-y-2 min-w-[330px] lg:flex-1">
                 <h2 className="font-heading text-2xl font-medium">
                   World Of Metaverse
                 </h2>
@@ -116,7 +116,7 @@ const Phases = () => {
                 </p>
               </article>
 
-              <article className="space-y-2 flex-1">
+              <article className="space-y-2 min-w-[330px] lg:flex-1">
                 <h2 className="font-heading text-2xl font-medium">
                   $FAMM
                 </h2>

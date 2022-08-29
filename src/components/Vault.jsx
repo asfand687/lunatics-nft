@@ -20,9 +20,9 @@ const Vault = () => {
         <AnimatePresence exitBeforeEnter>
           {
             !showVault &&
-            <motion.section exit={{ opacity: 0, transition: { duration: 0.5, delay: 2, ease: 'circInOut' } }} className="z-0 h-full">
+            <motion.section exit={{ opacity: 0, transition: { duration: 0.5, delay: 2, ease: 'circInOut' } }} className="z-0 h-[88vh]">
               <section className={`h-full w-full transform transition-all ease-out z-10`}>
-                <article className={`absolute uppercase z-10 bg-black bg-opacity-50 w-full h-full flex items-center space-y-6 md:space-y-0 transition-opacity duration-1000 ease-in-out vault-text ${hideText && 'opacity-0'}`}>
+                <article className={`absolute uppercase z-10 bg-black bg-opacity-50 w-full h-full flex items-center space-y-6 md:space-y-0 transition-opacity duration-1000 ease-in-out vault-text px-4 ${hideText && 'opacity-0'}`}>
                   <div className="max-w-[40rem] text-white">
                     <h2 className="text-4xl font-medium tracking-[-0.1em]  pb-8">Enter Your Email To <br /> Gain Access To The Vault</h2>
                     <h3 className="text-2xl md:text-3xl tracking-[-0.1em]  pb-4 ">Get Added To Our Email List</h3>

@@ -8,7 +8,7 @@ import { ReactComponent as Lunatics } from '../assets/lunatics-sticker.svg'
 const Footer = () => {
   return (
     <footer className="bg-white text-black py-2 text-xs">
-      <div className="w-full max-w-[1400px] px-4  mx-auto flex flex-col md:flex-row md:justify-center md:items-start">
+      <div className="w-full max-w-[1400px] px-4  mx-auto flex flex-col md:flex-row md:justify-center md:items-center">
         <article className="hidden md:flex flex-1 flex-col text-xs">
           <Lunatics />
           <p className="text-xs font-light leading-4 max-w-[350px]">Lorem ipsum dolor, sit amet consectetur adipisicing elit. dolores dolorem et aperiam? Bconsectetur adipisci recusandae repellat?</p>

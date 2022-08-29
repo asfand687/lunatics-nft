@@ -48,8 +48,8 @@ const teamData = [
 const TeamSection = () => {
   return (
     <section className="w-full text-white pb-32 lg:max-w-[1400px] px-4 mx-auto">
-      <h1 className="font-heading text-6xl py-6 font-bold uppercase">Meet The Team</h1>
-      <div className="grid grid-cols-3 gap-8">
+      <h1 className="font-heading text-4xl lg:text-6xl py-6 font-bold uppercase">Meet The Team</h1>
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
         {
           teamData.map(team => (
             <TeamMember

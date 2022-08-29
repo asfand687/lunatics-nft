@@ -159,7 +159,7 @@ const Slick = () => {
       animate={{ translateY: 0, opacity: 1 }}
       transition={{ ease: 'circIn', duration: 1 }}
       className=" bg-black">
-      <div className="lg:block h-[90vh] flex items-center">
+      <div className="lg:block h-[90vh] items-center">
         <Slider {...settings}>
           {sliderData.map((slider, idx) => (
             <div key={slider.id} className={`px-4 lg:pt-[44px] ${idx === imageIndex ? "" : "opacity-30"}`} >
@@ -167,24 +167,27 @@ const Slick = () => {
                 <article className={` relative px-16`}>
                   {idx === imageIndex && (
                     <img
-                      className={`absolute z-50  left-1/2 top-0  transform -translate-x-1/2 hidden ${idx === imageIndex ? "animate-pulse  scale-110 block" : ""}`}
+                      className={`absolute z-50  left-1/2 top-0  transform -translate-x-1/2 hidden ${idx === imageIndex ? "animate-pulse  scale-110 lg:block" : ""}`}
                       src={Shadow} alt="shadow" />
                   )}
                   <motion.img
-                    animate={{ scale: idx === imageIndex ? 0.9 : 0.8 }}
+                    animate={{ scale: idx === imageIndex ? 0.97 : 0.9 }}
                     transition={{ delay: 0.7, ease: 'easeInOut' }}
-                    className="w-full max-w-[500px] relative z-10"
+                    className="w-full max-w-[500px] relative z-10 "
                     src={slider.img}
                     alt="nft" />
                 </article>
-                <article className=" flex flex-col items-start justify-start space-y-10">
-                  <img className="w-28" src={slider.marker} alt={slider.title} />
+                <article className=" flex lg:flex-col items-start justify-start space-y-10">
+                  <div className="hidden lg:block">
+                    <img className="w-28" src={slider.marker} alt={slider.title} />
+                  </div>
                   <motion.div
+                  className="block"
                     initial={{ opacity: 0.4 }}
                     animate={{ opacity: idx === imageIndex ? 1 : 0.4 }}
                     transition={{ delay: 0.5, ease: 'circIn' }}>
                     <h2 className="text-white py-6 text-5xl font-muse">{slider.title}</h2>
-                    <p className="text-white text-2xl max-w-[467px] font-jost">{slider.description}</p>
+                    <p className="text-white text-2xl max-w-[467px] font-jost hidden lg:block">{slider.description}</p>
                   </motion.div>
                 </article>
               </div>

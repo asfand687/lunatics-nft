@@ -15,8 +15,8 @@ const AboutHero = () => {
   }
   return (
     <section className="w-full text-white pt-24 py-16 lg:max-w-[1400px] px-4 mx-auto mb-2">
-      <div className="flex flex-col lg:flex-row lg:space-x-20">
-        <article className="flex-[2] border border-gray-300 rounded-xl p-[6px]">
+      <div className="flex flex-col gap-10 md:flex-row md:justify-center flex-wrap lg:space-x-20">
+        <article className="flex-1 border border-gray-300 rounded-xl p-[6px]">
           <div className="border border-gray-300 rounded-xl p-8 h-full">
             <div>
               <div className="spotify about-left overflow-hidden relative filter transition-all ease-in-out duration-500">
@@ -35,7 +35,7 @@ const AboutHero = () => {
             </div>
           </div>
         </article>
-        <article className="flex-[2] border border-gray-300 rounded-xl p-[6px]">
+        <article className="flex-1 border border-gray-300 rounded-xl p-[6px]">
           <div className="border border-gray-300 rounded-xl p-8 h-full">
             <div>
             <div className="spotify about-right overflow-hidden relative filter  transition-all ease-in-out duration-500">
@@ -54,7 +54,7 @@ const AboutHero = () => {
             </div>
           </div>
         </article>
-        <article className="w-12"></article>
+        <article className="w-12 hidden lg:block"></article>
       </div>
     </section>
   )
