@@ -158,12 +158,12 @@ const Slick = () => {
       initial={{ translateY: 1000, opacity: 0 }}
       animate={{ translateY: 0, opacity: 1 }}
       transition={{ ease: 'circIn', duration: 1 }}
-      className=" bg-[#282828]">
+      className=" bg-black">
       <div className="lg:block h-screen flex items-center">
         <Slider {...settings}>
           {sliderData.map((slider, idx) => (
             <div key={slider.id} className={`px-4 lg:pt-[44px] ${idx === imageIndex ? "" : "opacity-30"}`} >
-              <div className="flex flex-col items-center lg:flex-row space-x-6 py-14">
+              <div className="flex flex-col justify-start items-center lg:items-start lg:flex-row space-x-6 py-14">
                 <article className={` relative px-16`}>
                   {idx === imageIndex && (
                     <img
@@ -177,14 +177,14 @@ const Slick = () => {
                     src={slider.img}
                     alt="nft" />
                 </article>
-                <article className="flex-1 flex flex-col items-start">
-                  <img className="w-20 h-20 " src={slider.marker} alt={slider.title} />
+                <article className="flex-1 flex flex-col items-start justify-start space-y-10">
+                  <img className="w-28" src={slider.marker} alt={slider.title} />
                   <motion.div
                     initial={{ opacity: 0.4 }}
                     animate={{ opacity: idx === imageIndex ? 1 : 0.4 }}
                     transition={{ delay: 0.5, ease: 'circIn' }}>
-                    <h2 className="text-white py-6 text-5xl">{slider.title}</h2>
-                    <p className="text-white text-2xl max-w-lg">{slider.description}</p>
+                    <h2 className="text-white py-6 text-5xl font-muse">{slider.title}</h2>
+                    <p className="text-white text-2xl max-w-[467px] font-jost">{slider.description}</p>
                   </motion.div>
                 </article>
               </div>
