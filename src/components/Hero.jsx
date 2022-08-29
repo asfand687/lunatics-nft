@@ -14,7 +14,7 @@ const Hero = () => {
     if (slider === null)
       return 0;
 
-    if (e.wheelDelta > 0) {
+    if (e.wheelDelta < 0) {
       slider.current.slickNext()
     } else {
       slider.current.slickPrev()

@@ -159,7 +159,7 @@ const Slick = () => {
       animate={{ translateY: 0, opacity: 1 }}
       transition={{ ease: 'circIn', duration: 1 }}
       className=" bg-[#282828]">
-      <div className="lg:block lg:min-h-[850px] flex items-center">
+      <div className="lg:block h-screen flex items-center">
         <Slider {...settings}>
           {sliderData.map((slider, idx) => (
             <div key={slider.id} className={`px-4 lg:pt-[44px] ${idx === imageIndex ? "" : "opacity-30"}`} >
@@ -173,7 +173,7 @@ const Slick = () => {
                   <motion.img
                     animate={{ scale: idx === imageIndex ? 1 : 0.9 }}
                     transition={{ delay: 0.7, ease: 'easeInOut' }}
-                    className="w-full max-w-[500px] relative z-10"
+                    className="w-full max-w-[600px] relative z-10"
                     src={slider.img}
                     alt="nft" />
                 </article>

@@ -1,6 +1,5 @@
 import React from 'react'
 import Hero from '../components/Hero'
-import Vault from '../components/Vault'
 import Navbar from '../components/Navbar'
 
 const Home = () => {
@@ -10,7 +9,6 @@ const Home = () => {
         <Navbar classes="w-full bg-transparent max-w-[1400px] hamburger" />
       </div>
       <Hero />
-      <Vault />
     </div>
   );
 }
