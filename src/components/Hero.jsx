@@ -29,6 +29,7 @@ const Hero = () => {
     slidesToShow: 1,    
     dots: true,
     infinite: false,
+    swipeToSlide: true,
     beforeChange: (prev, next) => {
       setCurrentSlide(next)
     },
