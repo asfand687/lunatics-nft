@@ -1,4 +1,5 @@
 import React from 'react'
+import Footer from '../components/Footer';
 import Hero from '../components/Hero'
 import Navbar from '../components/Navbar'
 
@@ -9,6 +10,7 @@ const Home = () => {
         <Navbar classes="w-full bg-transparent max-w-[1400px] hamburger" />
       </div>
       <Hero />
+      <Footer/>
     </div>
   );
 }

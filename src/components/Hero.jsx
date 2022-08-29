@@ -4,6 +4,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Vault from './Vault';
+import {motion} from 'framer-motion'
 
 const Hero = () => {
   const slider = useRef(null)
@@ -22,11 +23,12 @@ const Hero = () => {
   }
 
   const settings = {
-    fade: true,
-    speed: 1200,
-    slidesToShow: 1,
-    centerPadding: '50px',
+    className: "h-[88vh]",
+    vertical: true,
+    speed: 800,
+    slidesToShow: 1,    
     dots: true,
+    infinite: false,
     beforeChange: (prev, next) => {
       setCurrentSlide(next)
     },
@@ -55,22 +57,28 @@ const Hero = () => {
   }, [])
 
   return (
-    <div className="h-screen overflow-hidden">
+    <div className="overflow-hidden">
       <Slider {...settings} ref={slider}>
-        <section
-          className="snap-center h-screen text-white hero-bg flex items-end relative w-full">
+        <section>
+        <motion.section
+          className={`h-[88vh] text-white hero-bg flex items-end relative w-full transition-opacity duration-1000 delay-100 ${currentSlide === 0 ? 'opacity-100': 'opacity-0'}`}>
           <img className={`hidden md:block absolute -bottom-80 w-full z-10 transition-opacity ease-in-out delay-500 duration-1000 ${currentSlide === 0 ? "opacity-80" : 'opacity-0'}`} src={Clouds} alt="clouds" />
+        </motion.section>
         </section>
 
-        <section
-          className="snap-start  scrollPad md:h-screen text-white flex items-end  hero-bg second relative w-full">
+        <section>
+        <motion.section
+          className={`h-[88vh] text-white flex items-end  hero-bg second relative w-full transition-opacity duration-1000 delay-100 ${currentSlide === 1 ? 'opacity-100': 'opacity-0'}`}>
           <img className={`hidden md:block absolute -bottom-80 w-full z-10 transition-opacity ease-in-out delay-500 duration-1000 ${currentSlide === 1 ? "opacity-80" : 'opacity-0'}`} src={Clouds} alt="clouds" />
+        </motion.section>
         </section>
 
-        <section className="snap-center h-screen md:h-screen text-white hero-bg third relative w-full">
+        <section>
+        <motion.section className={`h-[88vh] text-white hero-bg third relative w-full transition-opacity duration-1000 delay-100 ${currentSlide === 2 ? 'opacity-100': 'opacity-0'}`}>
+        </motion.section>
         </section>
 
-        <Vault />
+        <Vault/>
       </Slider>
     </div>
   )

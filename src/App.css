@@ -8,6 +8,7 @@
   src: local('AndaleMono'), url("./assets/AndaleMono.ttf") format('truetype');
 }
 
+
 .font-heading {
   font-family: 'MonumentExtendedRegular'
 }
@@ -126,11 +127,11 @@ body {
   }
 }
 
-.radial {
+/* .radial {
   z-index: 3;
-  background: radial-gradient(#333, #3985ff00 80%);
+  background: radial-gradient(circle, #000, #bbb, #ddd);
   opacity: 0;
-}
+} */
 
 .spotify:hover {
   cursor: pointer;
