@@ -37,25 +37,37 @@ const Footer = () => {
             <article className="inline-block md:block">
               <div>
                 <span className="hidden md:inline">
-                  Instagram
+                  <a href="https://www.instagram.com/lunaticsnft/">
+                    Instagram
+                  </a>
                 </span>
-                <img className="md:hidden" src={Instagram} alt="Insta Logo" />
+                <a href="https://www.instagram.com/lunaticsnft/">
+                  <img className="md:hidden" src={Instagram} alt="Insta Logo" />
+                </a>
               </div>
             </article>
             <article className="inline-block md:block">
               <div>
                 <span className="hidden md:inline">
-                  Twitter
+                  <a href="https://mobile.twitter.com/lunaticsnft">
+                    Twitter
+                  </a>
                 </span>
-                <img className="md:hidden mx-4" src={Twitter} alt="Twitter Logo" />
+                <a href="https://mobile.twitter.com/lunaticsnft">
+                  <img className="md:hidden" src={Instagram} alt="Insta Logo" />
+                </a>
               </div>
             </article>
             <article className="inline-block md:block">
               <div>
                 <span className="hidden md:inline">
-                  Email
+                  <a href="mailto:info@thelunatics.io">
+                    Email
+                  </a>
                 </span>
-                <img className="md:hidden" src={Youtube} alt="Youtube Logo" />
+                <a href="mailto:info@thelunatics.io">
+                  <img className="md:hidden" src={Youtube} alt="Youtube Logo" />
+                </a>
               </div>
             </article>
           </div>

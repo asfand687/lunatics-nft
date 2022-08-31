@@ -31,7 +31,7 @@ const Phases = () => {
                   LUNATICS Store
                 </h2>
                 <p>
-                  Signature Lunatics merchandise to be launched for our community, pre-mint. This merchandise brings utility to 1,000 lucky participants to gain VIP whitelist access through the purchase of merchandise. Profits to be allocated to community wallet pre-mint.
+                  Signature Lunatics merchandise to be launched for our community, pre-mint. This merchandise brings utility to 1,000 lucky participants to gain VIP whitelist access through the purchase of merchandise.
                 </p>
               </article>
 
@@ -39,10 +39,14 @@ const Phases = () => {
                 <h2 className="font-heading text-2xl font-medium">
                   3D Collectibles
                 </h2>
-                <p>
-                  Fine art is incredible. Why not have something to physically show off? Our
-                  community will have a say which LUNATICS come to life. We will have regular drops with each collection being limited to increase its value and uniqueness for our community members.
-                </p>
+                <div className="space-y-2">
+                  <p>
+                    Fine art is incredible. Why not have it to physically show off? Our community will have a say which LUNATICS come to life. We will have regular drops with each collection being limited to increase its value and uniqueness for our community members.
+                  </p>
+                  <p>
+                    These unique pieces will be custom made by our artist. The holders will have a choice of keeping the collectible, have it on display with our partner HOFA or even auction it off for a minimum of $50,000 USD through our gallery partners.
+                  </p>
+                </div>
               </article>
             </div>
           </article>
@@ -63,7 +67,7 @@ const Phases = () => {
                   Gen 2 Collection Utility
                 </h2>
                 <p>
-                  Our next collection drop will be HUGE! All of our holders will have early whitelist spots and FREE NFTs for this collection. You don’t want to miss this.
+                  Our next collection drop will be HUGE! All of our holders will have early allowlist spots and FREE NFTs for this collection. This drop may or may not be with one of the biggest NFT brands that ceases to exist. Wink wink.
                 </p>
               </article>
 
@@ -78,10 +82,10 @@ const Phases = () => {
 
               <article className="space-y-2 min-w-[330px] lg:flex-1">
                 <h2 className="font-heading text-2xl font-medium">
-                  Event Access
+                  Treasury Pass
                 </h2>
                 <p>
-                  We believe that we have something special when it comes to our art and utilities, and we hope to bridge the gap between both WEB2 and WEB3 art communities. How will we do so? By hosting exclusive events with some of the world’s most talented artists, musicians, and personalities – all exclusively and complimentary to our holders.
+                  As we truly believe in the value fine art brings to the real world and the web3 space, we also believe that owners of fine art should be able to reap in the benefits of their appreciating investment. What does this mean? Lunatics holders will gain access to 25% of our secondary sale treasury - paid out in quarterly dividends.
                 </p>
               </article>
             </div>
@@ -109,10 +113,10 @@ const Phases = () => {
 
               <article className="space-y-2 min-w-[330px] lg:flex-1">
                 <h2 className="font-heading text-2xl font-medium">
-                  World Of Metaverse
+                  Web3 Magic
                 </h2>
                 <p>
-                  Lunatics will shift itself into the Metaverse developing an art museum of its own. The museum is set to host and collaborate with major brand names, artists and even NFT projects. The best part? Passive income for ALL Lunatics’ holders as we navigate advertising revenue and admission fees for the museum.
+                  Lunatics will shift itself into the Metaverse developing an art museum of its own. The museum is set to host and collaborate with major brand names, artists and even NFT projects. The best part? Passive income for ALL Lunatics’ holders as we navigate our WEB3 projects.
                 </p>
               </article>
 
@@ -121,7 +125,7 @@ const Phases = () => {
                   $FAMM
                 </h2>
                 <p>
-                  Creation of the $FAMM (Fine Art Museum Of The Metaverse) governance token for staking. Your native governance tokens could be used for attributes in our World of Metaverse, swap $FAMM for ETH or use it to purchase from our store.
+                  Creation of the $FAMM (Fine Art Museum Of The Metaverse) governance token for staking. Your native governance tokens could be used for attributes in our WEB3 Magic of Metaverse, swap $FAMM for ETH or use it to purchase from our store.
                 </p>
               </article>
             </div>
