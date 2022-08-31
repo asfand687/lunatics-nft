@@ -2,16 +2,16 @@ import React from 'react'
 
 const Phases = () => {
   return (
-    <section className="flex max-w-[1400px] mx-auto py-14">
+    <section className="flex max-w-[1400px] mx-auto py-8 lg:py-14">
       <article className="w-60 hidden lg:block"></article>
       <article className="w-full flex-1 pb-10 lg:pb-32 text-white px-4 mx-auto">
         <section className="flex flex-col space-y-6 lg:space-y-20">
           <article className="flex-1">
-            <div className="flex items-center font-heading uppercase border-b pb-6 border-gray-300">
-              <h2 className="text-6xl font-normal hidden lg:block pr-8">
+            <div className="lg:flex space-y-2 items-center font-heading uppercase border-b pb-6 border-gray-300">
+              <h2 className="text-4xl text-center lg:text-6xl font-normal lg:block lg:pr-8">
                 Phase 1
               </h2>
-              <div className="bg-gradient-to-r glow from-[#69F41F] via-[#69F41F] to-[#ffe924] flex items-center justify-center flex-1 text-center text-white font-heading font-medium tracking-wide text-5xl">
+              <div className="bg-gradient-to-r glow from-[#69F41F] via-[#69F41F] to-[#ffe924] flex items-center justify-center flex-1 text-center text-white font-heading font-medium tracking-wide text-3xl md:text-5xl">
                 <h2 className="leading-snug">In Progre<span className="text-black">ss</span></h2>
               </div>
             </div>
@@ -52,11 +52,11 @@ const Phases = () => {
           </article>
 
           <article className="flex-1">
-            <div className="flex items-center font-heading uppercase border-b pb-6 border-gray-300">
-              <h2 className="text-6xl font-normal hidden lg:block pr-8">
+            <div className="lg:flex space-y-2 items-center font-heading uppercase border-b pb-6 border-gray-300">
+              <h2 className="text-4xl text-center lg:text-6xl font-normal lg:block lg:pr-8">
                 Phase 2
               </h2>
-              <div className="bg-gradient-to-r glow from-[#69F41F] via-[#69F41F] to-[#ffe924] flex items-center justify-center flex-1 text-center text-white font-heading font-medium tracking-wide text-5xl">
+              <div className="bg-gradient-to-r glow from-[#69F41F] via-[#69F41F] to-[#ffe924] flex items-center justify-center flex-1 text-center text-white font-heading font-medium tracking-wide text-3xl text-3xl md:text-5xl">
                 <h2 className="leading-snug">In Progre<span className="text-black">ss</span></h2>
               </div>
             </div>
@@ -92,11 +92,11 @@ const Phases = () => {
           </article>
 
           <article className="flex-1">
-            <div className="flex items-center font-heading uppercase border-b pb-6 border-gray-300">
-              <h2 className="text-6xl font-normal hidden lg:block pr-8">
+            <div className="lg:flex space-y-2 items-center font-heading uppercase border-b pb-6 border-gray-300">
+              <h2 className="text-4xl text-center lg:text-6xl font-normal lg:block lg:pr-8">
                 Phase 3
               </h2>
-              <div className="bg-gradient-to-r glow from-[#69F41F] via-[#69F41F] to-[#ffe924] flex items-center justify-center flex-1 text-center text-white font-heading font-medium tracking-wide text-5xl">
+              <div className="bg-gradient-to-r glow from-[#69F41F] via-[#69F41F] to-[#ffe924] flex items-center justify-center flex-1 text-center text-white font-heading font-medium tracking-wide text-3xl md:text-5xl">
                 <h2 className="leading-snug">In Progre<span className="text-black">ss</span></h2>
               </div>
             </div>
