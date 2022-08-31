@@ -7,12 +7,12 @@ const Faq = () => {
 
   return (
     <div className="overflow-x-hidden">
-      <Navbar classes="w-full max-w-[1400px] 2xl:w-full py-1 bg-black" border="border-b border-white"/>
-      <section className="px-4 max-w-[1400px] mx-auto">
-        <FaqTitle className="hidden lg:block w-full"/>
-        <h1 className="lg:hidden font-heading text-[10rem] text-white text-center tracking-wider font-black">FAQ</h1>
+      <Navbar classes="w-full md:max-w-[1000px] lg:max-w-[1200px] 2xl:max-w-[1400px] 2xl:w-full py-1 bg-black" border="border-b border-white" />
+      <section className="px-4 w-full md:max-w-[1000px] lg:max-w-[1200px] 2xl:max-w-[1400px] mx-auto">
+        <FaqTitle className="hidden lg:block w-full md:max-w-[1000px] lg:max-w-[1200px] 2xl:max-w-[1400px] mx-auto" />
+        <h1 className="block lg:hidden font-heading text-[10rem] md:text-[18rem] text-white text-center tracking-wider font-black">FAQ</h1>
       </section>
-      <div className="w-full pt-4 pb-10 lg:pb-32 text-white lg:max-w-[1400px] px-4 mx-auto space-y-8 lg:space-y-14">
+      <div className="w-full pt-4 pb-10 lg:pb-32 text-white md:max-w-[1000px] lg:max-w-[1200px] 2xl:max-w-[1400px] px-4 mx-auto space-y-8 lg:space-y-14">
         <article className="flex flex-col lg:flex-row lg:justify-center gap-y-6 lg:gap-x-8 lg:items-stretch">
           <div className="p-[6px] rounded-[0.7rem] border border-white">
             <div className="lg:w-52 border rounded-lg border-gray-200 text-7xl lg:text-[150px] font-bold flex justify-center items-center leading-snug font-heading">1</div>
