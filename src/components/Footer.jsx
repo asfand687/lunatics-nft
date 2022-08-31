@@ -54,7 +54,7 @@ const Footer = () => {
                   </a>
                 </span>
                 <a href="https://mobile.twitter.com/lunaticsnft">
-                  <img className="md:hidden" src={Instagram} alt="Insta Logo" />
+                  <img className="md:hidden" src={Twitter} alt="Twitter" />
                 </a>
               </div>
             </article>
