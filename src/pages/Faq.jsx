@@ -20,7 +20,7 @@ const Faq = () => {
           <div className="flex-1 p-[6px] border border-gray-200 rounded-lg">
             <div className="rounded-lg border border-gray-200 h-full flex justify-center items-center p-2">
               <article className="space-y-4 text-center">
-                <h2 className="font-semibold text-xl">When Was Mint Date?</h2>
+                <h2 className="font-semibold text-xl">When is the Mint Date?</h2>
                 <div className="space-y-2">
                   <p className="max-w-4xl">
                     PRESALE - November 1st, 2022 1PM EST
@@ -59,7 +59,7 @@ const Faq = () => {
           <div className="flex-1 p-[6px] border border-gray-200 rounded-lg">
             <div className="rounded-lg border border-gray-200 h-full flex justify-center items-center p-2">
               <article className="space-y-4 text-center">
-                <h2 className="font-semibold text-xl">What Is The Minting Price?</h2>
+                <h2 className="font-semibold text-xl">What Is The Mint Price?</h2>
                 <div className="space-y-2">
                   <p className="max-w-4xl">
                     WHITELIST - 10 SOL
