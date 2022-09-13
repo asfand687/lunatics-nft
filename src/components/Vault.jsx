@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
 import Slider from './Slick'
 import { AnimatePresence, motion } from 'framer-motion'
-import VaultVideo from '../assets/vault.mp4'
+import VaultVideo from '../assets/desktop.mp4'
+import VaultVideoMobile from '../assets/mobile.mp4'
 import ReactPlayer from 'react-player'
 
 const Vault = () => {
@@ -33,8 +34,17 @@ const Vault = () => {
                   </div>
                 </article>
                 <ReactPlayer
-                  className="relative video z-0"
+                  className="hidden lg:block relative video z-0"
                   url={VaultVideo}
+                  playing={playVideo}
+                  loop={false}
+                  width="100%"
+                  height="100%"
+                  onEnded={() => setShowVault(true)}
+                />
+                <ReactPlayer
+                  className="lg:hidden relative video z-0"
+                  url={VaultVideoMobile}
                   playing={playVideo}
                   loop={false}
                   width="100%"

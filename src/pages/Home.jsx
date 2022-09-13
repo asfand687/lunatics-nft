@@ -5,12 +5,12 @@ import Navbar from '../components/Navbar'
 
 const Home = () => {
   return (
-    <div className="App overflow-y-hidden h-screen">
+    <div className="App overflow-y-hidden">
       <div className="absolute top-0 left-0 w-full hamburger">
         <Navbar classes="w-full bg-transparent max-w-[1400px] hamburger" />
       </div>
       <Hero />
-      <Footer/>
+      <Footer />
     </div>
   );
 }

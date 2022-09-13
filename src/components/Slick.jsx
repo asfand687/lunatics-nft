@@ -146,7 +146,7 @@ const Slick = () => {
     lazyLoad: true,
     speed: 300,
     slidesToShow: 1,
-    centerMode: true,
+    centerMode: false,
     centerPadding: '50px',
     nextArrow: <NextArrow className="text-black" />,
     prevArrow: <PrevArrow className="text-black" />,
@@ -159,21 +159,21 @@ const Slick = () => {
       animate={{ translateY: 0, opacity: 1 }}
       transition={{ ease: 'circIn', duration: 1 }}
       className=" bg-black">
-      <div className="lg:block h-[90vh] items-center">
+      <div className="lg:block items-center">
         <Slider {...settings}>
           {sliderData.map((slider, idx) => (
             <div key={slider.id} className={`px-4 lg:pt-[44px] ${idx === imageIndex ? "" : "opacity-30"}`} >
-              <div className="flex flex-col justify-start lg:justify-center items-center lg:items-start lg:flex-row space-x-6 py-14">
+              <div className="flex flex-col justify-start lg:justify-center items-center lg:items-start lg:flex-row lg:space-x-6 lg:py-14">
                 <article className={` relative px-16`}>
                   {idx === imageIndex && (
                     <img
-                      className={`absolute z-50  left-1/2 top-0  transform -translate-x-1/2 hidden ${idx === imageIndex ? "animate-pulse  scale-110 lg:block" : ""}`}
+                      className={`absolute z-50  left-1/2 top-6 md:-top-16  transform -translate-x-1/2 hidden ${idx === imageIndex ? "animate-pulse  scale-110 lg:block" : ""}`}
                       src={Shadow} alt="shadow" />
                   )}
                   <motion.img
                     animate={{ scale: idx === imageIndex ? 0.97 : 0.9 }}
                     transition={{ delay: 0.7, ease: 'easeInOut' }}
-                    className="w-full max-w-[500px] relative z-10 "
+                    className="top-32 lg:top-0 max-w-[300px] md:max-w-[400px] lg:max-w-[500px] mx-auto relative z-10 "
                     src={slider.img}
                     alt="nft" />
                 </article>
@@ -182,12 +182,12 @@ const Slick = () => {
                     <img className="w-28" src={slider.marker} alt={slider.title} />
                   </div>
                   <motion.div
-                  className="block"
+                    className="block px-4"
                     initial={{ opacity: 0.4 }}
                     animate={{ opacity: idx === imageIndex ? 1 : 0.4 }}
                     transition={{ delay: 0.5, ease: 'circIn' }}>
-                    <h2 className="text-white py-6 text-5xl font-muse">{slider.title}</h2>
-                    <p className="text-white text-2xl max-w-[467px] font-jost hidden lg:block">{slider.description}</p>
+                    <h2 className="text-white py-6 text-5xl font-muse pt-32 lg:pt-6">{slider.title}</h2>
+                    <p className="w-full text-white text-xl md:text-2xl max-w-[467px] font-jost hidden md:block">{slider.description}</p>
                   </motion.div>
                 </article>
               </div>
