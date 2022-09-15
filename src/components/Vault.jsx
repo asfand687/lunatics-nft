@@ -21,7 +21,7 @@ const Vault = () => {
         <AnimatePresence exitBeforeEnter>
           {
             !showVault &&
-            <motion.section exit={{ opacity: 0, transition: { duration: 0.5, delay: 2, ease: 'circInOut' } }} className="z-0 h-[110vh]">
+            <motion.section exit={{ opacity: 0, transition: { duration: 0.5, delay: 2, ease: 'circInOut' } }} className="z-0 h-[100vh]">
               <section className={`h-full w-full transform transition-all ease-out z-10`}>
                 <article className={`absolute uppercase z-10 bg-black bg-opacity-50 w-full h-full flex items-center space-y-6 md:space-y-0 transition-opacity duration-1000 ease-in-out vault-text px-4 ${hideText && 'opacity-0'}`}>
                   <div className="max-w-[40rem] text-white">
