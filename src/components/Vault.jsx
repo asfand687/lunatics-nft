@@ -34,7 +34,7 @@ const Vault = () => {
                   </div>
                 </article>
                 <ReactPlayer
-                  className="hidden lg:block relative video z-0"
+                  className="hidden md:block relative video z-0"
                   url={VaultVideo}
                   playing={playVideo}
                   loop={false}
@@ -43,7 +43,7 @@ const Vault = () => {
                   onEnded={() => setShowVault(true)}
                 />
                 <ReactPlayer
-                  className="block lg:hidden relative video z-0"
+                  className="block md:hidden relative video z-0"
                   url={VaultVideoMobile}
                   playing={playVideo}
                   loop={false}
